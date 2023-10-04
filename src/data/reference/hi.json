@@ -64,81 +64,210 @@
   "Camera": "कैमरा",
   "p5": {
     "description": [
-      "This is the p5 instance constructor.",
-      "A p5 instance holds all the properties and methods related to a p5 sketch. It expects an incoming sketch closure and it can also take an optional node parameter for attaching the generated p5 canvas to a node. The sketch closure takes the newly created p5 instance as its sole argument and may optionally set <a href=\"#/p5/preload\">preload()</a>, <a href=\"#/p5/setup\">setup()</a>, and/or <a href=\"#/p5/draw\">draw()</a> properties on it for running a sketch.",
-      "A p5 sketch can run in \"global\" or \"instance\" mode: \"global\" - all properties and methods are attached to the window \"instance\" - all properties and methods are bound to this p5 object"
+      "यह p5 इंस्टेंस कंस्ट्रक्टर है।",
+      "एक p5 इंस्टेंस एक p5 स्केच से संबंधित सभी गुण और विधियाँ रखता है। यह आने वाले स्केच क्लोजर की अपेक्षा करता है और यह जनरेट किए गए p5 कैनवास को नोड से जोड़ने के लिए एक वैकल्पिक नोड पैरामीटर भी ले सकता है। स्केच क्लोजर नए बनाए गए p5 इंस्टेंस को अपने एकमात्र तर्क के रूप में लेता है और वैकल्पिक रूप से <a href=\"#/p5/preload\">preload()</a>, <a href=\"#/p5/setup\">setup()</a>, और/या <a href=\"#/p5/draw\">draw()</a>सेट कर सकता है स्केच चलाने के लिए।",
+      "एक p5 स्केच \"global\" या \"instance\" मोड में चल सकता है: \"global\" - सभी गुण और विधियाँ विंडो से जुड़ी हैं \"instance\" - सभी गुण और विधियाँ इस p5 ऑब्जेक्ट से जुड़ी हैं।"
     ],
-    "returns": "P5: a p5 instance",
+    "returns": "P5: एक p5 इंस्टेंस",
     "params": {
-      "sketch": "Function: a closure that can set optional <a href=\"#/p5/preload\">preload()</a>,  <a href=\"#/p5/setup\">setup()</a>, and/or <a href=\"#/p5/draw\">draw()</a> properties on the  given p5 instance",
-      "node": "HTMLElement: (Optional) element to attach canvas to"
+      "sketch": "फंक्शन: एक क्लोजर जो वैकल्पिक <a href=\"#/p5/preload\">preload()</a>, <a href=\"#/p5/setup\">setup()</a>, और/या <a href=\"#/p5/draw\">draw()</a> सेट कर सकता है दिए गए p5 इंस्टेंस पर",
+      "node": "HTMLElement: (वैकल्पिक) तत्व कैनवास संलग्न करने के लिए"
     },
     "describe": {
       "description": [
-        "Creates a screen reader accessible description for the canvas. The first parameter should be a string with a description of the canvas. The second parameter is optional. If specified, it determines how the description is displayed.",
-        "<code class=\"language-javascript\">describe(text, LABEL)</code> displays the description to all users as a <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\"> tombstone or exhibit label/caption</a> in a div adjacent to the canvas. You can style it as you wish in your CSS.",
-        "<code class=\"language-javascript\">describe(text, FALLBACK)</code> makes the description accessible to screen-reader users only, in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> a sub DOM inside the canvas element</a>. If a second parameter is not specified, by default, the description will only be available to screen-reader users."
+        "कैनवास के लिए एक स्क्रीन रीडर पहुंच योग्य वर्णन बनाता है। पहला पैरामीटर कैनवास के description के साथ एक स्ट्रिंग होना चाहिए। दूसरा पैरामीटर वैकल्पिक है। यदि निर्दिष्ट किया गया है, तो यह निर्धारित करता है कि description कैसे प्रदर्शित किया जाता है।",
+        "<code class=\"language-javascript\">describe(text, LABEL)</code> description को <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank \"> टॉम्बस्टोन या प्रदर्शन लेबल/कैप्शन</a> के रूप में सभी उपयोगकर्ता कैनवास के करीब एक डिव में चित्रित करते हैं। आप इसे अपने CSS में अपनी इच्छानुसार स्टाइल कर सकते हैं।",
+        "<code class=\"language-javascript\">describe(text, FALLBACK)</code> description को केवल स्क्रीन-रीडर उपयोगकर्ताओं के लिए, <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> कैनवास तत्व के अंदर एक उप DOM</a> में सुलभ बनाता है। यदि कोई दूसरा पैरामीटर निर्दिष्ट नहीं किया गया है, तो डिफ़ॉल्ट रूप से, description केवल स्क्रीन-रीडर उपयोगकर्ताओं के लिए उपलब्ध होगा।"
       ],
       "params": {
-        "text": "String: description of the canvas",
-        "display": "Constant: (Optional) either LABEL or FALLBACK"
+        "text": "स्ट्रिंग: कैनवास का description",
+        "display": "कांस्टेंट: (वैकल्पिक) या तो LABEL या FALLBACK"
       }
     },
     "describeElement": {
       "description": [
-        "This function creates a screen-reader accessible description for elements —shapes or groups of shapes that create meaning together— in the canvas. The first paramater should be the name of the element. The second parameter should be a string with a description of the element. The third parameter is optional. If specified, it determines how the element description is displayed.",
-        "<code class=\"language-javascript\">describeElement(name, text, LABEL)</code> displays the element description to all users as a <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\"> tombstone or exhibit label/caption</a> in a div adjacent to the canvas. You can style it as you wish in your CSS.",
-        "<code class=\"language-javascript\">describeElement(name, text, FALLBACK)</code> makes the element description accessible to screen-reader users only, in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> a sub DOM inside the canvas element</a>. If a second parameter is not specified, by default, the element description will only be available to screen-reader users."
+        "यह फ़ंक्शन तत्वों के लिए एक स्क्रीन-रीडर सुलभ description बनाता है - आकार या आकार के समूह जो एक साथ अर्थ बनाते हैं - कैनवास में। पहला पैरामीटर तत्व का नाम होना चाहिए। दूसरा पैरामीटर तत्व के description के साथ एक स्ट्रिंग होना चाहिए। तीसरा पैरामीटर वैकल्पिक है। यदि निर्दिष्ट किया गया है, तो यह निर्धारित करता है कि तत्व description कैसे प्रदर्शित होता है।",
+        "<code class=\"language-javascript\">describeElement(name, text, LABEL)</code> सभी उपयोगकर्ताओं को <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\"> टॉम्बस्टोन या प्रदर्शनी लेबल/कैप्शन</a> के रूप में तत्व description प्रदर्शित करता है कैनवास से सटे एक div में। आप इसे अपने CSS में अपनी इच्छानुसार स्टाइल कर सकते हैं।",
+        "<code class=\"language-javascript\">describeElement(name, text, FALLBACK)</code>, <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> कैनवास तत्व के अंदर एक उप DOM</a> में तत्व description को केवल स्क्रीन-रीडर उपयोगकर्ताओं के लिए सुलभ बनाता है। यदि कोई दूसरा पैरामीटर निर्दिष्ट नहीं किया गया है, तो डिफ़ॉल्ट रूप से, तत्व description केवल स्क्रीन-रीडर उपयोगकर्ताओं के लिए उपलब्ध होगा।"
       ],
       "params": {
-        "name": "String: name of the element",
-        "text": "String: description of the element",
-        "display": "Constant: (Optional) either LABEL or FALLBACK"
+        "name": "स्ट्रिंग: तत्व का नाम",
+        "text": "स्ट्रिंग: तत्व का description",
+        "display": "कांस्टेंट: (वैकल्पिक) या तो LABEL या FALLBACK"
       }
     },
     "textOutput": {
       "description": [
-        "<code class=\"language-javascript\">textOutput()</code> creates a screenreader accessible output that describes the shapes present on the canvas. The general description of the canvas includes canvas size, canvas color, and number of elements in the canvas (example: 'Your output is a, 400 by 400 pixels, lavender blue canvas containing the following 4 shapes:'). This description is followed by a list of shapes where the color, position, and area of each shape are described (example: \"orange ellipse at top left covering 1% of the canvas\"). Each element can be selected to get more details. A table of elements is also provided. In this table, shape, color, location, coordinates and area are described (example: \"orange ellipse location=top left area=2\").",
-        "<code class=\"language-javascript\">textOutput()</code> and <code class=\"language-javascript\">textOutput(FALLBACK)</code> make the output available in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> a sub DOM inside the canvas element</a> which is accessible to screen readers. <code class=\"language-javascript\">textOutput(LABEL)</code> creates an additional div with the output adjacent to the canvas, this is useful for non-screen reader users that might want to display the output outside of the canvas' sub DOM as they code. However, using LABEL will create unnecessary redundancy for screen reader users. We recommend using LABEL only as part of the development process of a sketch and removing it before publishing or sharing with screen reader users."
+        "<code class=\"language-javascript\">textOutput()</code> एक स्क्रीनरीडर सुलभ आउटपुट बनाता है जो कैनवास पर मौजूद आकृतियों का वर्णन करता है। कैनवास के सामान्य description में कैनवास का आकार, कैनवास का रंग और कैनवास में तत्वों की संख्या शामिल है (उदाहरण: 'आपका आउटपुट है, 400 गुणा 400 पिक्सेल, लैवेंडर ब्लू कैनवास जिसमें निम्नलिखित 4 आकार हैं:')। इस description के बाद आकृतियों की एक सूची है जहां प्रत्येक आकृति के रंग, स्थिति और क्षेत्र का वर्णन किया गया है (उदाहरण: \"कैनवास के 1% को कवर करते हुए शीर्ष बाईं ओर नारंगी दीर्घवृत्त\")। अधिक description प्राप्त करने के लिए प्रत्येक तत्व का चयन किया जा सकता है। तत्वों की एक तालिका भी प्रदान की जाती है। इस तालिका में, आकार, रंग, स्थान, निर्देशांक और क्षेत्र का वर्णन किया गया है (उदाहरण: \"नारंगी दीर्घवृत्त स्थान=शीर्ष बाएँ क्षेत्र=2\")।",
+        "<code class=\"language-javascript\">textOutput()</code> और <code class=\"language-javascript\">textOutput(FALLBACK)</code> आउटपुट को <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> कैनवास एलिमेंट के अंदर एक सब DOM</a> में उपलब्ध कराते हैं जिसे एक्सेस किया जा सकता है स्क्रीन पाठकों के लिए। <code class=\"language-javascript\">textOutput(LABEL)</code> कैनवास के निकट आउटपुट के साथ एक अतिरिक्त div बनाता है, यह गैर-स्क्रीन रीडर उपयोगकर्ताओं के लिए उपयोगी है जो आउटपुट को इसके बाहर प्रदर्शित करना चाहते हैं कैनवास के उप DOM के रूप में वे कोड करते हैं। हालांकि, LABEL का उपयोग स्क्रीन रीडर उपयोगकर्ताओं के लिए अनावश्यक अतिरेक पैदा करेगा। हम अनुशंसा करते हैं कि LABEL का उपयोग केवल एक स्केच की विकास प्रक्रिया के भाग के रूप में करें और प्रकाशित करने या स्क्रीन रीडर उपयोगकर्ताओं के साथ साझा करने से पहले इसे हटा दें।"
       ],
       "params": {
-        "display": "Constant: (Optional) either FALLBACK or LABEL"
+        "display": "कांस्टेंट: (वैकल्पिक) या तो LABEL या FALLBACK"
       }
     },
     "gridOutput": {
       "description": [
-        "<code class=\"language-javascript\">gridOutput()</code> lays out the content of the canvas in the form of a grid (html table) based on the spatial location of each shape. A brief description of the canvas is available before the table output. This description includes: color of the background, size of the canvas, number of objects, and object types (example: \"lavender blue canvas is 200 by 200 and contains 4 objects - 3 ellipses 1 rectangle\"). The grid describes the content spatially, each element is placed on a cell of the table depending on its position. Within each cell an element the color and type of shape of that element are available (example: \"orange ellipse\"). These descriptions can be selected individually to get more details. A list of elements where shape, color, location, and area are described (example: \"orange ellipse location=top left area=1%\") is also available.",
-        "<code class=\"language-javascript\">gridOutput()</code> and <code class=\"language-javascript\">gridOutput(FALLBACK)</code> make the output available in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> a sub DOM inside the canvas element</a> which is accessible to screen readers. <code class=\"language-javascript\">gridOutput(LABEL)</code> creates an additional div with the output adjacent to the canvas, this is useful for non-screen reader users that might want to display the output outside of the canvas' sub DOM as they code. However, using LABEL will create unnecessary redundancy for screen reader users. We recommend using LABEL only as part of the development process of a sketch and removing it before publishing or sharing with screen reader users."
+        "<code class=\"language-javascript\">gridOutput()</code> प्रत्येक आकार के स्थानिक स्थान के आधार पर एक ग्रिड (एचटीएमएल तालिका) के रूप में कैनवास की सामग्री को प्रस्तुत करता है। टेबल आउटपुट से पहले कैनवास का संक्षिप्त description उपलब्ध है। इस description में शामिल हैं: पृष्ठभूमि का रंग, कैनवास का आकार, वस्तुओं की संख्या और वस्तु प्रकार (उदाहरण: \"लैवेंडर नीला कैनवास 200 गुणा 200 है और इसमें 4 ऑब्जेक्ट हैं - 3 दीर्घवृत्त 1 आयत\")। ग्रिड सामग्री का स्थानिक रूप से वर्णन करता है, प्रत्येक तत्व को उसकी स्थिति के आधार पर तालिका के एक सेल पर रखा जाता है। प्रत्येक कोशिका के भीतर एक तत्व का रंग और प्रकार का आकार उपलब्ध होता है (उदाहरण: \"नारंगी दीर्घवृत्त\")। अधिक विवरण प्राप्त करने के लिए इन विवरणों को व्यक्तिगत रूप से चुना जा सकता है। तत्वों की एक सूची जहां आकार, रंग, स्थान और क्षेत्र का वर्णन किया गया है (उदाहरण: \"नारंगी दीर्घवृत्त स्थान=शीर्ष बायां क्षेत्र=1%\") भी उपलब्ध है।",
+        "<code class=\"language-javascript\">gridOutput()</code> और <code class=\"language-javascript\">gridOutput(FALLBACK)</code> आउटपुट को <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> कैनवास एलिमेंट के अंदर एक सब DOM</a> में उपलब्ध कराते हैं जिसे एक्सेस किया जा सकता है स्क्रीन पाठकों के लिए। <code class=\"language-javascript\">gridOutput(LABEL)</code> कैनवास के निकट आउटपुट के साथ एक अतिरिक्त div बनाता है, यह गैर-स्क्रीन रीडर उपयोगकर्ताओं के लिए उपयोगी है जो आउटपुट को इसके बाहर प्रदर्शित करना चाहते हैं कैनवास के उप DOM के रूप में वे कोड करते हैं। हालांकि, LABEL का उपयोग स्क्रीन रीडर उपयोगकर्ताओं के लिए अनावश्यक अतिरेक पैदा करेगा। हम अनुशंसा करते हैं कि LABEL का उपयोग केवल एक स्केच की विकास प्रक्रिया के भाग के रूप में करें और प्रकाशित करने या स्क्रीन रीडर उपयोगकर्ताओं के साथ साझा करने से पहले इसे हटा दें।"
       ],
       "params": {
-        "display": "Constant: (Optional) either FALLBACK or LABEL"
+        "display": "कांस्टेंट: (वैकल्पिक) या तो LABEL या FALLBACK"
       }
+    },
+    "print": {
+      "description": [
+        "<a href=\"#/p5/print\">print()</a> फ़ंक्शन आपके ब्राउज़र के कंसोल क्षेत्र में लिखता है। प्रोग्राम द्वारा उत्पादित डेटा को देखने के लिए यह फ़ंक्शन अक्सर सहायक होता है। यह फ़ंक्शन फ़ंक्शन में प्रत्येक कॉल के लिए टेक्स्ट की एक नई पंक्ति बनाता है। व्यक्तिगत तत्वों को उद्धरणों (\"\") से अलग किया जा सकता है और अतिरिक्त ऑपरेटर (+) के साथ जोड़ा जा सकता है।",
+        "ध्यान दें कि बिना किसी तर्क के print() को कॉल करना window.print() फ़ंक्शन को आमंत्रित करता है जो ब्राउज़र के प्रिंट डायलॉग को खोलता है। कंसोल के लिए एक खाली लाइन प्रिंट करने के लिए आप प्रिंट('\\n') लिख सकते हैं।"
+      ],
+      "params": {
+        "contents": "Any: प्रिंट करने के लिए Number, String, Object, Boolean, Array का कोई भी संयोजन"
+      }
+    },
+    "frameCount": {
+      "description": [
+        "सिस्टम वेरिएबल <a href=\"#/p5/frameCount\">frameCount</a> में उन फ़्रेमों की संख्या होती है जो प्रोग्राम शुरू होने के बाद से प्रदर्शित किए गए हैं। अंदर <a href=\"#/p5/setup\">setup()</a> मान 0 है, ड्रॉ के पहले पुनरावृत्ति के बाद यह 1 है, आदि।"
+      ]
+    },
+    "deltaTime": {
+      "description": [
+        "सिस्टम वेरिएबल <a href=\"#/p5/deltaTime\">deltaTime</a> में मिलीसेकंड में पिछले फ़्रेम की शुरुआत और वर्तमान फ़्रेम की शुरुआत के बीच का समय अंतर होता है।",
+        "यह चर समय संवेदनशील एनीमेशन या भौतिकी गणना बनाने के लिए उपयोगी है जो फ्रेम दर की परवाह किए बिना स्थिर रहना चाहिए।"
+      ]
+    },
+    "focused": {
+      "description": [
+        "पुष्टि करता है कि विंडो एक p5.js प्रोग्राम \"केंद्रित है\" में है, जिसका अर्थ है कि स्केच माउस या कीबोर्ड इनपुट को स्वीकार करेगा। यदि विंडो केंद्रित है तो यह चर \"सत्य\" है और यदि नहीं है तो \"गलत\" है।"
+      ]
+    },
+    "cursor": {
+      "description": [
+        "कर्सर को एक पूर्वनिर्धारित प्रतीक या एक छवि पर सेट करता है, या पहले से छिपा हुआ होने पर इसे दृश्यमान बनाता है। यदि आप एक छवि को कर्सर के रूप में सेट करने का प्रयास कर रहे हैं, तो अनुशंसित आकार 16x16 या 32x32 पिक्सेल है। पैरामीटर x और y के मान छवि के आयामों से कम होने चाहिए।"
+      ],
+      "params": {
+        "type": "String|Constant: बिल्ट-इन: या तो ARROW, CROSS, HAND, MOVE, TEXT और WAIT नेटिव CSS गुण: 'ग्रैब', 'प्रोग्रेस', 'सेल' आदि। बाहरी: कर्सर की छवियों के लिए पथ (अनुमत फ़ाइल एक्सटेंशन: .cur, .gif, .jpg, .jpeg, .png) नेटिव CSS कर्सर और url पर अधिक जानकारी के लिए यहां जाएं: <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/cursor\">https://developer.mozilla.org/en-US/docs/Web/CSS/cursor</a>",
+        "x": "संख्या: (वैकल्पिक) कर्सर का क्षैतिज सक्रिय स्थान (32 से कम होना चाहिए)",
+        "y": "संख्या: (वैकल्पिक) कर्सर का लंबवत सक्रिय स्थान (32 से कम होना चाहिए)"
+      }
+    },
+    "frameRate": {
+      "description": [
+        "प्रत्येक सेकंड में प्रदर्शित होने वाले फ़्रेमों की संख्या निर्दिष्ट करता है। उदाहरण के लिए, फ़ंक्शन कॉल frameRate(30) एक सेकंड में 30 बार ताज़ा करने का प्रयास करेगा। यदि प्रोसेसर निर्दिष्ट दर को बनाए रखने के लिए पर्याप्त तेज़ नहीं है, तो फ़्रेम दर नहीं होगी हासिल किया। फ्रेम दर को <a href=\"#/p5/setup\">setup()</a> के भीतर सेट करने की अनुशंसा की जाती है। डिफ़ॉल्ट फ्रेम दर प्रदर्शन की फ्रेम दर पर आधारित होती है (यहां इसे \" भी कहा जाता है) ताज़ा दर\"), जो अधिकांश कंप्यूटरों पर 60 फ़्रेम प्रति सेकंड पर सेट है। 24 फ़्रेम प्रति सेकंड (फ़िल्मों के लिए सामान्य) या इससे अधिक की फ़्रेम दर सुचारू एनिमेशन के लिए पर्याप्त होगी। यह setFrameRate(val) के समान है।",
+        "कॉलिंग <a href=\"#/p5/frameRate\">frameRate()</a> बिना किसी तर्क के वर्तमान फ्रैमरेट लौटाती है। ड्रा फ़ंक्शन को मान वापस करने से पहले कम से कम एक बार चलना चाहिए। यह वही है <a href=\"#/p5/getFrameRate\">getFrameRate()</a> के रूप में।",
+        "<a href=\"#/p5/frameRate\">frameRate()</a> को ऐसे तर्कों के साथ कॉल करना जो संख्याओं के प्रकार के नहीं हैं या जो सकारात्मक नहीं हैं, वर्तमान फ्रैमरेट भी लौटाते हैं।"
+      ],
+      "params": {
+        "fps": "संख्या: प्रति सेकंड प्रदर्शित होने वाले फ़्रेमों की संख्या"
+      }
+    },
+    "noCursor": {
+      "description": [
+        "कर्सर को देखने से छुपाता है।"
+      ]
+    },
+    "displayWidth": {
+      "description": [
+        "सिस्टम वैरिएबल जो डिफ़ॉल्ट <a href=\"#/p5/pixelDensity\">pixelDensity</a> के अनुसार स्क्रीन डिस्प्ले की चौड़ाई को स्टोर करता है। इसका उपयोग किसी भी डिस्प्ले साइज पर फुल-स्क्रीन प्रोग्राम चलाने के लिए किया जाता है। वास्तविक स्क्रीन आकार वापस करने के लिए, इसे पिक्सेल घनत्व से गुणा करें।"
+      ]
+    },
+    "displayHeight": {
+      "description": [
+        "सिस्टम वैरिएबल जो डिफ़ॉल्ट <a href=\"#/p5/pixelDensity\">pixelDensity</a> के अनुसार स्क्रीन डिस्प्ले की ऊंचाई को स्टोर करता है। इसका उपयोग किसी भी डिस्प्ले साइज पर फुल-स्क्रीन प्रोग्राम चलाने के लिए किया जाता है। वास्तविक स्क्रीन आकार वापस करने के लिए, इसे पिक्सेल घनत्व से गुणा करें।"
+      ]
+    },
+    "windowWidth": {
+      "description": [
+        "सिस्टम वेरिएबल जो आंतरिक विंडो की चौड़ाई को संग्रहीत करता है, यह window.innerWidth पर मैप करता है।"
+      ]
+    },
+    "windowHeight": {
+      "description": [
+        "सिस्टम वेरिएबल जो आंतरिक विंडो की ऊंचाई को संग्रहीत करता है, यह window.innerHeight पर मैप करता है।"
+      ]
+    },
+    "windowResized": {
+      "description": [
+        "<a href=\"#/p5/windowResized\">windowResized()</a> फ़ंक्शन हर बार ब्राउज़र विंडो का आकार बदलने पर एक बार कॉल किया जाता है। कैनवास का आकार बदलने या इसके लिए कोई अन्य समायोजन करने के लिए यह एक अच्छी जगह है नई विंडो के आकार को समायोजित करें।"
+      ],
+      "params": {
+        "event": "वस्तु: (वैकल्पिक) वैकल्पिक घटना कॉलबैक तर्क।"
+      }
+    },
+    "width": {
+      "description": [
+        "सिस्टम वैरिएबल जो ड्रॉइंग कैनवास की चौड़ाई को स्टोर करता है। यह मान <a href=\"#/p5/createCanvas\">createCanvas()</a> फ़ंक्शन के पहले पैरामीटर द्वारा सेट किया गया है। उदाहरण के लिए, फ़ंक्शन कॉल createCanvas(320, 240) चौड़ाई चर को मान 320 पर सेट करता है। चौड़ाई का मान डिफ़ॉल्ट रूप से 100 हो जाता है यदि <a href=\"#/p5/createCanvas\">createCanvas()</a> का उपयोग नहीं किया जाता है कार्यक्रम।"
+      ]
+    },
+    "height": {
+      "description": [
+        "सिस्टम वैरिएबल जो ड्राइंग कैनवास की ऊंचाई को स्टोर करता है। यह मान <a href=\"#/p5/createCanvas\">createCanvas()</a> फ़ंक्शन के दूसरे पैरामीटर द्वारा सेट किया गया है। उदाहरण के लिए, फ़ंक्शन कॉल createCanvas(320, 240) ऊंचाई चर को 240 मान पर सेट करता है। ऊंचाई का मान डिफ़ॉल्ट रूप से 100 हो जाता है यदि <a href=\"#/p5/createCanvas\">createCanvas()</a> का उपयोग नहीं किया जाता है कार्यक्रम।"
+      ]
+    },
+    "fullscreen": {
+      "description": [
+        "यदि तर्क दिया गया है, तो तर्क के मूल्य के आधार पर स्केच को पूर्णस्क्रीन पर सेट करता है या नहीं। यदि कोई तर्क नहीं दिया जाता है, तो वर्तमान पूर्णस्क्रीन स्थिति लौटाता है। ध्यान दें कि ब्राउज़र प्रतिबंधों के कारण इसे केवल उपयोगकर्ता इनपुट पर ही कॉल किया जा सकता है, उदाहरण के लिए , माउस प्रेस पर नीचे दिए गए उदाहरण की तरह।"
+      ],
+      "returns": "बूलियन: वर्तमान पूर्ण स्क्रीन स्थिति",
+      "params": {
+        "val": "बूलियन: (वैकल्पिक) स्केच फ़ुलस्क्रीन मोड में होना चाहिए या नहीं"
+      }
+    },
+    "pixelDensity": {
+      "description": [
+        "उच्च पिक्सेल घनत्व डिस्प्ले के लिए पिक्सेल स्केलिंग सेट करता है। डिफ़ॉल्ट रूप से पिक्सेल घनत्व प्रदर्शन घनत्व से मेल खाने के लिए सेट होता है, इसे बंद करने के लिए पिक्सेल घनत्व (1) पर कॉल करें। <a href=\"#/p5/pixelDensity\">pixelDensity() </a>पर कॉल करना बिना किसी तर्क के स्केच का वर्तमान पिक्सेल घनत्व लौटाता है।"
+      ],
+      "params": {
+        "val": "संख्या: स्केच को स्केल करना चाहिए या नहीं"
+      }
+    },
+    "displayDensity": {
+      "description": [
+        "वर्तमान डिस्प्ले का पिक्सेल घनत्व लौटाता है जिस पर स्केच चल रहा है।"
+      ],
+      "returns": "संख्या: डिस्प्ले का वर्तमान पिक्सेल घनत्व"
+    },
+    "getURL": {
+      "description": [
+        "वर्तमान URL प्राप्त करता है। नोट: p5 संपादक का उपयोग करते समय, यह एक खाली वस्तु लौटाएगा क्योंकि स्केच एक iframe में एम्बेड किया गया है। यदि आप संपादक के वर्तमान या साझा URL का उपयोग करके स्केच देखते हैं तो यह ठीक से काम करेगा।"
+      ],
+      "returns": "स्ट्रिंग: url"
+    },
+    "getURLPath": {
+      "description": [
+        "एक सरणी के रूप में वर्तमान URL पथ प्राप्त करता है। नोट: p5 संपादक का उपयोग करते समय, यह एक खाली वस्तु लौटाएगा क्योंकि स्केच एक iframe में एम्बेड किया गया है। यदि आप संपादक के वर्तमान या साझा URL का उपयोग करके स्केच देखते हैं तो यह ठीक से काम करेगा।"
+      ],
+      "returns": "स्ट्रिंग []: पथ घटक"
+    },
+    "getURLParams": {
+      "description": [
+        "ऑब्जेक्ट के रूप में वर्तमान यूआरएल पैराम प्राप्त करता है। नोट: p5 संपादक का उपयोग करते समय, यह एक खाली वस्तु लौटाएगा क्योंकि स्केच एक iframe में एम्बेड किया गया है। यदि आप संपादक के वर्तमान या साझा URL का उपयोग करके स्केच देखते हैं तो यह ठीक से काम करेगा।"
+      ],
+      "returns": "ऑब्जेक्ट: URL पैरामीटर"
     },
     "alpha": {
       "description": [
-        "Extracts the alpha value from a color or pixel array."
+        "रंग या पिक्सेल सरणी से अल्फा मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: अल्फा मान",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "blue": {
       "description": [
-        "Extracts the blue value from a color or pixel array."
+        "रंग या पिक्सेल सरणी से नीला मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: नीला मान",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "brightness": {
       "description": [
-        "Extracts the HSB brightness value from a color or pixel array."
+        "किसी रंग या पिक्सेल सरणी से HSB चमक मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: चमक मूल्य",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "color": {
@@ -149,23 +278,23 @@
       ],
       "returns": "फिक्स: परिणामस्वरूप रंग",
       "params": {
-        "gray": "Number: number specifying value between white and black.",
-        "alpha": "Number: (Optional) alpha value relative to current color range  (default is 0-255)",
-        "v1": "Number: red or hue value relative to  the current color range",
-        "v2": "Number: green or saturation value  relative to the current color range",
-        "v3": "Number: blue or brightness value  relative to the current color range",
-        "value": "String: a color string",
-        "values": "Number[]: an array containing the red,green,blue &  and alpha components of the color",
+        "gray": "संख्या: संख्या सफेद और काले के बीच मान निर्दिष्ट करती है।",
+        "alpha": "संख्या: (वैकल्पिक) वर्तमान रंग सीमा के सापेक्ष अल्फा मान (डिफ़ॉल्ट 0-255 है)",
+        "v1": "संख्या: वर्तमान रंग सीमा के सापेक्ष लाल या रंग मान",
+        "v2": "संख्या: वर्तमान रंग सीमा के सापेक्ष हरा या संतृप्ति मान",
+        "v3": "संख्या: वर्तमान रंग सीमा के सापेक्ष नीला या चमक मान",
+        "value": "स्ट्रिंग: एक रंग स्ट्रिंग",
+        "values": "संख्या []: रंग के लाल, हरे, नीले और अल्फा घटकों वाली एक सरणी",
         "color": "p5.Color"
       }
     },
     "green": {
       "description": [
-        "Extracts the green value from a color or pixel array."
+        "रंग या पिक्सेल सरणी से हरा मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: हरा मान",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "hue": {
@@ -173,9 +302,9 @@
         "रंग या पिक्सेल सरणी से रंग मान निकालता है।",
         "ह्यू एचएसबी और एचएसएल दोनों में मौजूद है। एचएसबी रंग ऑब्जेक्ट के साथ आपूर्ति किए जाने पर यह फ़ंक्शन एचएसबी-सामान्यीकृत रंग लौटाएगा (या जब रंग मोड एचएसबी होने पर पिक्सेल सरणी के साथ आपूर्ति की जाती है), लेकिन एचएसएल-सामान्यीकृत रंग के लिए डिफ़ॉल्ट होगा अन्यथा। (मान केवल तभी भिन्न होंगे जब प्रत्येक सिस्टम के लिए अधिकतम ह्यू सेटिंग अलग हो।)"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: रंग मान",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "lerpColor": {
@@ -183,29 +312,29 @@
         "दो रंगों को मिलाता है उनके बीच कहीं तीसरा रंग खोजने के लिए। एएमटी पैरामीटर दो मानों के बीच इंटरपोलेट करने की मात्रा है जहां 0.0 पहले रंग के बराबर है, 0.1 पहले रंग के बहुत करीब है, 0.5 बीच में आधा है, आदि। एक 0 से नीचे की राशि को 0 माना जाएगा। इसी तरह, 1 से ऊपर की राशि को 1 पर सीमित कर दिया जाएगा। यह <a href=\"#/p5/lerp\">lerp()</a> के व्यवहार से अलग है, लेकिन आवश्यक है क्योंकि अन्यथा सीमा के बाहर की संख्याएँ अजीब और अप्रत्याशित रंग उत्पन्न करेंगी।",
         "जिस तरह से रंगों को प्रक्षेपित किया जाता है वह वर्तमान रंग मोड पर निर्भर करता है।"
       ],
-      "returns": "व्यवस्था / संख्या: प्रक्षेपित रंग",
+      "returns": "p5.रंग: प्रक्षेपित रंग",
       "params": {
-        "c1": "p5.Color: interpolate from this color",
-        "c2": "p5.Color: interpolate to this color",
-        "amt": "Number: number between 0 and 1"
+        "c1": "p5.Color: इस रंग से प्रक्षेपित करें",
+        "c2": "p5.Color: इस रंग में प्रक्षेपित करें",
+        "amt": "संख्या: 0 और 1 के बीच की संख्या"
       }
     },
     "lightness": {
       "description": [
-        "Extracts the HSL lightness value from a color or pixel array."
+        "रंग या पिक्सेल सरणी से HSL हल्कापन मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: हल्कापन",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "red": {
       "description": [
-        "Extracts the red value from a color or pixel array."
+        "रंग या पिक्सेल सरणी से लाल मान निकालता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: लाल मान",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "saturation": {
@@ -213,70 +342,77 @@
         "रंग या पिक्सेल सरणी से संतृप्ति मान निकालता है।",
         "संतृप्ति को एचएसबी और एचएसएल में अलग-अलग स्केल किया जाता है। यह फ़ंक्शन एचएसबी रंग ऑब्जेक्ट के साथ आपूर्ति किए जाने पर एचएसबी संतृप्ति लौटाएगा (या जब रंग मोड एचएसबी है, तो पिक्सेल सरणी के साथ आपूर्ति की जाती है), लेकिन अन्यथा एचएसएल संतृप्ति में डिफ़ॉल्ट होगा।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: संतृप्ति मूल्य",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
+        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट, रंग घटक, या CSS रंग"
       }
     },
     "background": {
       "description": [
-        "<a href=\"#/p5/background\">background()</a> फ़ंक्शन p5.js कैनवास की पृष्ठभूमि के लिए उपयोग किए गए रंग को सेट करता है। डिफ़ॉल्ट पृष्ठभूमि पारदर्शी होती है। यह फ़ंक्शन आमतौर पर अंदर उपयोग किया जाता है <a href=\"#/p5/draw\">draw()</a> प्रत्येक फ्रेम की शुरुआत में डिस्प्ले विंडो को साफ करने के लिए, लेकिन इसका उपयोग <a href=\"#/p5/setup\">सेटअप ()</a> एनिमेशन के पहले फ्रेम पर बैकग्राउंड सेट करने के लिए या अगर बैकग्राउंड को सिर्फ एक बार सेट करने की जरूरत है।",
-        "रंग या तो आरजीबी, एचएसबी, या एचएसएल रंग के संदर्भ में निर्दिष्ट किया गया है जो वर्तमान <a href=\"#/p5/colorMode\">colorMode</a> पर निर्भर करता है। (डिफ़ॉल्ट रंग स्थान RGB है, जिसमें 0 से 255 तक की सीमा में प्रत्येक मान)। डिफ़ॉल्ट रूप से अल्फा श्रेणी भी 0 से 255 तक होती है।",
-        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो आरजीबी, आरजीबीए और हेक्स सीएसएस रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, आरजीबीए फॉर्म का उपयोग किया जाना चाहिए।",
+        "<a href=\"#/p5/background\">background()</a> फ़ंक्शन p5.js कैनवास की पृष्ठभूमि के लिए उपयोग किए गए रंग को सेट करता है। डिफ़ॉल्ट पृष्ठभूमि पारदर्शी होती है। यह फ़ंक्शन आमतौर पर अंदर उपयोग किया जाता है <a href=\"#/p5/draw\">draw()</a> प्रत्येक फ्रेम की शुरुआत में डिस्प्ले विंडो को साफ करने के लिए, लेकिन इसका उपयोग <a href=\"#/p5/setup\">setup()</a> एनिमेशन के पहले फ्रेम पर बैकग्राउंड सेट करने के लिए या अगर बैकग्राउंड को सिर्फ एक बार सेट करने की जरूरत है।",
+        "रंग या तो RGB, HSB, या HSL रंग के संदर्भ में निर्दिष्ट किया गया है जो वर्तमान <a href=\"#/p5/colorMode\">colorMode</a> पर निर्भर करता है। (डिफ़ॉल्ट रंग स्थान RGB है, जिसमें 0 से 255 तक की सीमा में प्रत्येक मान)। डिफ़ॉल्ट रूप से अल्फा श्रेणी भी 0 से 255 तक होती है।",
+        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो RGB, HSB और Hex CSS रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, RGBA फॉर्म का उपयोग किया जाना चाहिए।",
         "एक <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट भी बैकग्राउंड कलर सेट करने के लिए दिया जा सकता है।",
         "एक <a href=\"#/p5.Image\">p5.Image</a> भी पृष्ठभूमि छवि सेट करने के लिए प्रदान किया जा सकता है।"
       ],
       "params": {
-        "color": "p5.Color: any value created by the <a href=\"#/p5/color\">color()</a> function",
-        "colorstring": "String: color string, possible formats include: integer  rgb() or rgba(), percentage rgb() or rgba(),  3-digit hex, 6-digit hex",
-        "a": "Number: (Optional) opacity of the background relative to current  color range (default is 0-255)",
-        "gray": "Number: specifies a value between white and black",
-        "v1": "Number: red or hue value (depending on the current color  mode)",
-        "v2": "Number: green or saturation value (depending on the current  color mode)",
-        "v3": "Number: blue or brightness value (depending on the current  color mode)",
-        "values": "Number[]: an array containing the red, green, blue  and alpha components of the color",
-        "image": "p5.Image: image created with <a href=\"#/p5/loadImage\">loadImage()</a> or <a href=\"#/p5/createImage\">createImage()</a>,  to set as background  (must be same size as the sketch window)"
+        "color": "p5.Color: <a href=\"#/p5/color\">color()</a> फ़ंक्शन द्वारा बनाया गया कोई भी मान",
+        "colorstring": "स्ट्रिंग: रंग स्ट्रिंग, संभावित स्वरूपों में शामिल हैं: पूर्णांक rgb() या rgba(), percentage rgb() या rgba(), 3-अंकीय hex, 6-अंकीय hex",
+        "a": "संख्या: (वैकल्पिक) वर्तमान रंग सीमा के सापेक्ष पृष्ठभूमि की अस्पष्टता (डिफ़ॉल्ट 0-255 है)",
+        "gray": "संख्या: सफेद और काले रंग के बीच एक मान निर्दिष्ट करता है",
+        "v1": "संख्या: लाल या रंग मान (वर्तमान रंग मोड के आधार पर)",
+        "v2": "संख्या: हरा या संतृप्ति मान (वर्तमान रंग मोड के आधार पर)",
+        "v3": "संख्या: नीला या चमक मान (वर्तमान रंग मोड के आधार पर)",
+        "values": "संख्या []: रंग के लाल, हरे, नीले और अल्फा घटकों वाली एक सरणी",
+        "image": "p5.इमेज: इमेज <a href=\"#/p5/loadImage\">loadImage()</a> या <a href=\"#/p5/createImage\">createImage()</a> से बनाई गई इमेज , पृष्ठभूमि के रूप में सेट करने के लिए (स्केच विंडो के समान आकार का होना चाहिए)"
       }
     },
     "clear": {
       "description": [
-        "Clears the pixels within a buffer. This function only clears the canvas. It will not clear objects created by createX() methods such as <a href=\"#/p5/createVideo\">createVideo()</a> or <a href=\"#/p5/createDiv\">createDiv()</a>. Unlike the main graphics context, pixels in additional graphics areas created with <a href=\"#/p5/createGraphics\">createGraphics()</a> can be entirely or partially transparent. This function clears everything to make all of the pixels 100% transparent."
-      ]
+        "बफ़र के भीतर पिक्सेल साफ़ करता है। यह फ़ंक्शन केवल कैनवास को साफ़ करता है। यह createX() विधियों जैसे कि <a href=\"#/p5/createVideo\">createVideo()</a> या <a href=\"#/p5/createDiv\">createDiv()</a> द्वारा बनाए गए ऑब्जेक्ट को साफ़ नहीं करेगा। मुख्य ग्राफ़िक्स संदर्भ के विपरीत, <a href=\"#/p5/createGraphics\">createGraphics()</a> से बनाए गए अतिरिक्त ग्राफ़िक्स क्षेत्रों में पिक्सेल पूरी तरह या आंशिक रूप से पारदर्शी हो सकते हैं। यह फ़ंक्शन सभी पिक्सेल को 100% पारदर्शी बनाने के लिए सब कुछ साफ़ करता है।",
+        "नोट: WebGL मोड में, स्क्रीन को एक विशिष्ट रंग में साफ़ करने के लिए इस फ़ंक्शन को सामान्यीकृत RGBA रंग मान पारित किया जा सकता है। रंग के अलावा, यह डेप्थ बफर को भी साफ करेगा। यदि आप वेबजीएल रेंडरर का उपयोग नहीं कर रहे हैं तो इन रंग मानों का कोई प्रभाव नहीं पड़ेगा।"
+      ],
+      "params": {
+        "r": "संख्या: सामान्यीकृत लाल मान।",
+        "g": "संख्या: सामान्यीकृत हरा मान।",
+        "b": "संख्या: सामान्यीकृत नीला मान।",
+        "a": "संख्या: सामान्यीकृत अल्फा मान।"
+      }
     },
     "colorMode": {
       "description": [
-        "<a href=\"#/p5/colorMode\">colorMode()</a> p5.js रंग डेटा की व्याख्या करने के तरीके को बदल देता है। डिफ़ॉल्ट रूप से, <a href=\"#/p5/fill\">भरें()</a>, <a href=\"#/p5/stroke\">stroke()</a>, <a href=\"#/p5/background\">background()</a>, और <a href=\"#/p5/color\">color()</a> को RGB रंग मॉडल का उपयोग करके 0 और 255 के बीच के मानों द्वारा परिभाषित किया जाता है। यह colorMode (RGB, 255) सेट करने के बराबर है कलरमोड (एचएसबी) सेट करने से आप इसके बजाय एचएसबी सिस्टम का उपयोग कर सकते हैं। डिफ़ॉल्ट रूप से, यह कलरमोड (एचएसबी, 360, 100, 100, 1) है। आप एचएसएल का भी उपयोग कर सकते हैं।",
+        "<a href=\"#/p5/colorMode\">colorMode()</a> p5.js रंग डेटा की व्याख्या करने के तरीके को बदल देता है। डिफ़ॉल्ट रूप से, <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a>, <a href=\"#/p5/background\">background()</a>, और <a href=\"#/p5/color\">color()</a> को RGB रंग मॉडल का उपयोग करके 0 और 255 के बीच के मानों द्वारा परिभाषित किया जाता है। यह colorMode (RGB, 255) सेट करने के बराबर है कलरमोड (एचएसबी) सेट करने से आप इसके बजाय HSB सिस्टम का उपयोग कर सकते हैं। डिफ़ॉल्ट रूप से, यह कलरमोड (HSB, 360, 100, 100, 1) है। आप एचएसएल का भी उपयोग कर सकते हैं।",
         "नोट: मौजूदा रंगीन ऑब्जेक्ट उस मोड को याद रखते हैं जिसमें वे बनाए गए थे, इसलिए आप उनकी उपस्थिति को प्रभावित किए बिना अपनी पसंद के अनुसार मोड बदल सकते हैं।"
       ],
       "params": {
-        "mode": "Constant: either RGB, HSB or HSL, corresponding to  Red/Green/Blue and Hue/Saturation/Brightness  (or Lightness)",
-        "max": "Number: (Optional) range for all values",
-        "max1": "Number: range for the red or hue depending on the  current color mode",
-        "max2": "Number: range for the green or saturation depending  on the current color mode",
-        "max3": "Number: range for the blue or brightness/lightness  depending on the current color mode",
-        "maxA": "Number: (Optional) range for the alpha"
+        "mode": "कांस्टेंट: या तो RGB, HSB या HSL, लाल/हरे/नीले और रंग/संतृप्ति/चमक (या लपट) के अनुरूप",
+        "max": "संख्या: (वैकल्पिक) सभी मानों के लिए श्रेणी",
+        "max1": "संख्या: वर्तमान रंग मोड के आधार पर लाल या रंग के लिए रेंज",
+        "max2": "संख्या: वर्तमान रंग मोड के आधार पर हरे या संतृप्ति के लिए सीमा",
+        "max3": "संख्या: वर्तमान रंग मोड के आधार पर नीले या चमक/हल्केपन के लिए सीमा",
+        "maxA": "संख्या: (वैकल्पिक) अल्फ़ा के लिए श्रेणी"
       }
     },
     "fill": {
       "description": [
-        "आकृतियों को भरने के लिए प्रयुक्त रंग सेट करता है। उदाहरण के लिए, यदि आप भरण (204, 102, 0) चलाते हैं, तो भरण आदेश के बाद खींची गई सभी आकृतियों को नारंगी रंग से भर दिया जाएगा। यह रंग या तो आरजीबी के संदर्भ में निर्दिष्ट है या वर्तमान <a href=\"#/p5/colorMode\">colorMode()</a> के आधार पर HSB रंग। (डिफ़ॉल्ट रंग स्थान RGB है, जिसमें प्रत्येक मान 0 से 255 के बीच होता है)। अल्फा डिफ़ॉल्ट रूप से सीमा भी 0 से 255 तक होती है।",
-        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो आरजीबी, आरजीबीए और हेक्स सीएसएस रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, आरजीबीए फॉर्म का उपयोग किया जाना चाहिए।",
-        "एक p5 <a href=\"#/p5.Color\">Color</a> ऑब्जेक्ट भी भरण रंग सेट करने के लिए प्रदान किया जा सकता है।"
+        "आकृतियों को भरने के लिए प्रयुक्त रंग सेट करता है। उदाहरण के लिए, यदि आप fill(204, 102, 0) चलाते हैं, तो fill आदेश के बाद खींची गई सभी आकृतियों को नारंगी रंग से भर दिया जाएगा। यह रंग या तो RGB के संदर्भ में निर्दिष्ट है या वर्तमान <a href=\"#/p5/colorMode\">colorMode()</a> के आधार पर HSB रंग। (डिफ़ॉल्ट रंग स्थान RGB है, जिसमें प्रत्येक मान 0 से 255 के बीच होता है)। अल्फा डिफ़ॉल्ट रूप से सीमा भी 0 से 255 तक होती है।",
+        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो RGB, RGBA और Hex CSS रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, RGBA फॉर्म का उपयोग किया जाना चाहिए।",
+        "एक p5 <a href=\"#/p5.Color\">Color</a> ऑब्जेक्ट भी fill रंग सेट करने के लिए प्रदान किया जा सकता है।"
       ],
       "params": {
-        "v1": "Number: red or hue value relative to  the current color range",
-        "v2": "Number: green or saturation value  relative to the current color range",
-        "v3": "Number: blue or brightness value  relative to the current color range",
-        "alpha": "Number (Optional)",
-        "value": "String: a color string",
-        "gray": "Number: a gray value",
-        "values": "Number[]: an array containing the red,green,blue &  and alpha components of the color",
-        "color": "p5.Color: the fill color"
+        "v1": "संख्या: वर्तमान रंग सीमा के सापेक्ष लाल या रंग मान",
+        "v2": "संख्या: वर्तमान रंग सीमा के सापेक्ष हरा या संतृप्ति मान",
+        "v3": "संख्या: वर्तमान रंग सीमा के सापेक्ष नीला या चमक मान",
+        "alpha": "संख्या (वैकल्पिक)",
+        "value": "स्ट्रिंग: एक रंग स्ट्रिंग",
+        "gray": "संख्या: एक ग्रे मान",
+        "values": "संख्या []: रंग के लाल, हरे, नीले और अल्फा घटकों वाली एक सरणी",
+        "color": "p5.Color: फिल कलर"
       }
     },
     "noFill": {
       "description": [
-        "Disables filling geometry. If both <a href=\"#/p5/noStroke\">noStroke()</a> and <a href=\"#/p5/noFill\">noFill()</a> are called, nothing will be drawn to the screen."
+        "ज्यामिति भरना अक्षम करता है। अगर <a href=\"#/p5/noStroke\">noStroke()</a> और <a href=\"#/p5/noFill\">noFill()</a> दोनों कॉल किए जाते हैं, तो कुछ भी नहीं होगा स्क्रीन पर खींचा जाना।"
       ]
     },
     "noStroke": {
@@ -287,33 +423,33 @@
     "stroke": {
       "description": [
         "आकृतियों के चारों ओर रेखाएँ और सीमाएँ खींचने के लिए उपयोग किए गए रंग को सेट करता है। यह रंग या तो RGB या HSB रंग के संदर्भ में निर्दिष्ट होता है जो वर्तमान <a href=\"#/p5/colorMode\">colorMode()</a>पर निर्भर करता है। (डिफ़ॉल्ट रंग स्थान आरजीबी है, प्रत्येक मान 0 से 255 तक की सीमा में है। डिफ़ॉल्ट रूप से अल्फा श्रेणी भी 0 से 255 है।",
-        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो आरजीबी, आरजीबीए और हेक्स सीएसएस रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, आरजीबीए फॉर्म का उपयोग किया जाना चाहिए।",
-        "स्ट्रोक रंग सेट करने के लिए एक p5 <a href=\"#/p5.Color\">Color</a> ऑब्जेक्ट भी प्रदान किया जा सकता है।"
+        "यदि एक एकल स्ट्रिंग तर्क प्रदान किया जाता है, तो RGB, RGBA और Hex CSS रंग तार और सभी नामित रंग तार समर्थित हैं। इस मामले में, दूसरे तर्क के रूप में अल्फा संख्या मान समर्थित नहीं है, RGBA फॉर्म का उपयोग किया जाना चाहिए।",
+        "स्ट्रोक रंग सेट करने के लिए एक <a href=\"#/p5.Color\">p5.Color</a> ऑब्जेक्ट भी प्रदान किया जा सकता है।"
       ],
       "params": {
-        "v1": "Number: red or hue value relative to  the current color range",
-        "v2": "Number: green or saturation value  relative to the current color range",
-        "v3": "Number: blue or brightness value  relative to the current color range",
-        "alpha": "Number (Optional)",
-        "value": "String: a color string",
-        "gray": "Number: a gray value",
-        "values": "Number[]: an array containing the red,green,blue &  and alpha components of the color",
-        "color": "p5.Color: the stroke color"
+        "v1": "संख्या: वर्तमान रंग सीमा के सापेक्ष लाल या रंग मान",
+        "v2": "संख्या: वर्तमान रंग सीमा के सापेक्ष हरा या संतृप्ति मान",
+        "v3": "संख्या: वर्तमान रंग सीमा के सापेक्ष नीला या चमक मान",
+        "alpha": "संख्या (वैकल्पिक)",
+        "value": "स्ट्रिंग: एक रंग स्ट्रिंग",
+        "gray": "संख्या: एक ग्रे मान",
+        "values": "संख्या []: रंग के लाल, हरे, नीले और अल्फा घटकों वाली एक सरणी",
+        "color": "p5.Color: स्ट्रोक कलर"
       }
     },
     "erase": {
       "description": [
-        "All drawing that follows <a href=\"#/p5/erase\">erase()</a> will subtract from the canvas.Erased areas will reveal the web page underneath the canvas.Erasing can be canceled with <a href=\"#/p5/noErase\">noErase()</a>.",
-        "Drawing done with <a href=\"#/p5/image\">image()</a> and <a href=\"#/p5/background\"> background()</a> in between <a href=\"#/p5/erase\">erase()</a> and <a href=\"#/p5/noErase\">noErase()</a> will not erase the canvas but works as usual."
+        "<a href=\"#/p5/erase\">erase()</a> के बाद आने वाले सभी आरेखण कैनवास से घटाए जाएंगे। मिटाए गए क्षेत्र कैनवास के नीचे वेब पेज प्रकट करेंगे। मिटाने को <a href=\"#/p5/noErase\">noErase()</a> से रद्द किया जा सकता है।",
+        "ड्रॉइंग <a href=\"#/p5/image\">image()</a> और <a href=\"#/p5/background\"> background()</a> के साथ <a href=\"#/p5/erase\">erase()</a> और <a href=\"#/p5/noErase\">noErase()</a> के बीच की गई है कैनवास को नहीं मिटाएगा लेकिन हमेशा की तरह काम करता है।"
       ],
       "params": {
-        "strengthFill": "Number: (Optional) A number (0-255) for the strength of erasing for a shape's fill.  This will default to 255 when no argument is given, which  is full strength.",
-        "strengthStroke": "Number: (Optional) A number (0-255) for the strength of erasing for a shape's stroke.  This will default to 255 when no argument is given, which  is full strength."
+        "strengthFill": "संख्या: (वैकल्पिक) आकार भरने के लिए मिटाने की ताकत के लिए एक संख्या (0-255)। जब कोई तर्क नहीं दिया जाता है, जो पूरी ताकत है, तो यह डिफ़ॉल्ट रूप से 255 हो जाएगा।",
+        "strengthStroke": "संख्या: (वैकल्पिक) आकृति के स्ट्रोक के लिए मिटाने की शक्ति के लिए एक संख्या (0-255)। जब कोई तर्क नहीं दिया जाता है, जो पूरी ताकत है, तो यह डिफ़ॉल्ट रूप से 255 हो जाएगा।"
       }
     },
     "noErase": {
       "description": [
-        "Ends erasing that was started with <a href=\"#/p5/erase\">erase()</a>. The <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a>, and <a href=\"#/p5/blendMode\">blendMode()</a> settings will return to what they were prior to calling <a href=\"#/p5/erase\">erase()</a>."
+        "मिटाना समाप्त होता है जिसे <a href=\"#/p5/erase\">erase()</a> से शुरू किया गया था। <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a> और <a href=\"#/p5/blendMode\">blendMode()</a> सेटिंग उसी तरह वापस आ जाएंगी जैसे वे <a href=\"#/p5/erase\">erase()</a> को कॉल करने से पहले थीं।"
       ]
     },
     "arc": {
@@ -888,135 +1024,6 @@
     "AXES": {},
     "LABEL": {},
     "FALLBACK": {},
-    "print": {
-      "description": [
-        "The <a href=\"#/p5/print\">print()</a> function writes to the console area of your browser. This function is often helpful for looking at the data a program is producing. This function creates a new line of text for each call to the function. Individual elements can be separated with quotes (\"\") and joined with the addition operator (+).",
-        "Note that calling print() without any arguments invokes the window.print() function which opens the browser's print dialog. To print a blank line to console you can write print('\\n')."
-      ],
-      "params": {
-        "contents": "Any: any combination of Number, String, Object, Boolean,  Array to print"
-      }
-    },
-    "frameCount": {
-      "description": [
-        "The system variable <a href=\"#/p5/frameCount\">frameCount</a> contains the number of frames that have been displayed since the program started. Inside <a href=\"#/p5/setup\">setup()</a> the value is 0, after the first iteration of draw it is 1, etc."
-      ]
-    },
-    "deltaTime": {
-      "description": [
-        "The system variable <a href=\"#/p5/deltaTime\">deltaTime</a> contains the time difference between the beginning of the previous frame and the beginning of the current frame in milliseconds.",
-        "This variable is useful for creating time sensitive animation or physics calculation that should stay constant regardless of frame rate."
-      ]
-    },
-    "focused": {
-      "description": [
-        "Confirms if the window a p5.js program is in is \"focused,\" meaning that the sketch will accept mouse or keyboard input. This variable is \"true\" if the window is focused and \"false\" if not."
-      ]
-    },
-    "cursor": {
-      "description": [
-        "Sets the cursor to a predefined symbol or an image, or makes it visible if already hidden. If you are trying to set an image as the cursor, the recommended size is 16x16 or 32x32 pixels. The values for parameters x and y must be less than the dimensions of the image."
-      ],
-      "params": {
-        "type": "String|Constant: Built-In: either ARROW, CROSS, HAND, MOVE, TEXT and WAIT  Native CSS properties: 'grab', 'progress', 'cell' etc.  External: path for cursor's images  (Allowed File extensions: .cur, .gif, .jpg, .jpeg, .png)  For more information on Native CSS cursors and url visit:  <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/cursor\">https://developer.mozilla.org/en-US/docs/Web/CSS/cursor</a>",
-        "x": "Number: (Optional) the horizontal active spot of the cursor (must be less than 32)",
-        "y": "Number: (Optional) the vertical active spot of the cursor (must be less than 32)"
-      }
-    },
-    "frameRate": {
-      "description": [
-        "प्रत्येक सेकंड में प्रदर्शित होने वाले फ़्रेमों की संख्या निर्दिष्ट करता है। उदाहरण के लिए, फ़ंक्शन कॉल frameRate(30) एक सेकंड में 30 बार ताज़ा करने का प्रयास करेगा। यदि प्रोसेसर निर्दिष्ट दर को बनाए रखने के लिए पर्याप्त तेज़ नहीं है, तो फ़्रेम दर नहीं होगी हासिल किया। फ्रेम दर को <a href=\"#/p5/setup\">setup()</a> के भीतर सेट करने की अनुशंसा की जाती है। डिफ़ॉल्ट फ्रेम दर प्रदर्शन की फ्रेम दर पर आधारित होती है (यहां इसे \" भी कहा जाता है) ताज़ा दर\"), जो अधिकांश कंप्यूटरों पर 60 फ़्रेम प्रति सेकंड पर सेट है। 24 फ़्रेम प्रति सेकंड (फ़िल्मों के लिए सामान्य) या इससे अधिक की फ़्रेम दर सुचारू एनिमेशन के लिए पर्याप्त होगी। यह setFrameRate(val) के समान है।",
-        "कॉलिंग <a href=\"#/p5/frameRate\">frameRate()</a> बिना किसी तर्क के वर्तमान फ्रैमरेट लौटाती है। ड्रा फ़ंक्शन को मान वापस करने से पहले कम से कम एक बार चलना चाहिए। यह वही है <a href=\"#/p5/getFrameRate\">getFrameRate()</a> के रूप में।",
-        "<a href=\"#/p5/frameRate\">frameRate()</a> को ऐसे तर्कों के साथ कॉल करना जो संख्याओं के प्रकार के नहीं हैं या जो सकारात्मक नहीं हैं, वर्तमान फ्रैमरेट भी लौटाते हैं।"
-      ],
-      "params": {
-        "fps": "Number: number of frames to be displayed every second"
-      }
-    },
-    "noCursor": {
-      "description": [
-        "Hides the cursor from view."
-      ]
-    },
-    "displayWidth": {
-      "description": [
-        "सिस्टम वैरिएबल जो डिफ़ॉल्ट <a href=\"#/p5/pixelDensity\">pixelDensity</a> के अनुसार स्क्रीन डिस्प्ले की चौड़ाई को स्टोर करता है। इसका उपयोग किसी भी डिस्प्ले साइज पर फुल-स्क्रीन प्रोग्राम चलाने के लिए किया जाता है। वास्तविक स्क्रीन आकार वापस करने के लिए, इसे पिक्सेल घनत्व से गुणा करें।"
-      ]
-    },
-    "displayHeight": {
-      "description": [
-        "सिस्टम वैरिएबल जो डिफ़ॉल्ट <a href=\"#/p5/pixelDensity\">pixelDensity</a> के अनुसार स्क्रीन डिस्प्ले की ऊंचाई को स्टोर करता है। इसका उपयोग किसी भी डिस्प्ले साइज पर फुल-स्क्रीन प्रोग्राम चलाने के लिए किया जाता है। वास्तविक स्क्रीन आकार वापस करने के लिए, इसे पिक्सेल घनत्व से गुणा करें।"
-      ]
-    },
-    "windowWidth": {
-      "description": [
-        "System variable that stores the width of the inner window, it maps to window.innerWidth."
-      ]
-    },
-    "windowHeight": {
-      "description": [
-        "System variable that stores the height of the inner window, it maps to window.innerHeight."
-      ]
-    },
-    "windowResized": {
-      "description": [
-        "<a href=\"#/p5/windowResized\">windowResized()</a> फ़ंक्शन हर बार ब्राउज़र विंडो का आकार बदलने पर एक बार कॉल किया जाता है। कैनवास का आकार बदलने या इसके लिए कोई अन्य समायोजन करने के लिए यह एक अच्छी जगह है नई विंडो के आकार को समायोजित करें।"
-      ],
-      "params": {
-        "event": "Object: (Optional) optional Event callback argument."
-      }
-    },
-    "width": {
-      "description": [
-        "सिस्टम वैरिएबल जो ड्रॉइंग कैनवास की चौड़ाई को स्टोर करता है। यह मान <a href=\"#/p5/createCanvas\">createCanvas()</a> फ़ंक्शन के पहले पैरामीटर द्वारा सेट किया गया है। उदाहरण के लिए, फ़ंक्शन कॉल createCanvas(320, 240) चौड़ाई चर को मान 320 पर सेट करता है। चौड़ाई का मान डिफ़ॉल्ट रूप से 100 हो जाता है यदि <a href=\"#/p5/createCanvas\">createCanvas()</a> का उपयोग नहीं किया जाता है कार्यक्रम।"
-      ]
-    },
-    "height": {
-      "description": [
-        "सिस्टम वैरिएबल जो ड्राइंग कैनवास की ऊंचाई को स्टोर करता है। यह मान <a href=\"#/p5/createCanvas\">createCanvas()</a> फ़ंक्शन के दूसरे पैरामीटर द्वारा सेट किया गया है। उदाहरण के लिए, फ़ंक्शन कॉल createCanvas(320, 240) ऊंचाई चर को 240 मान पर सेट करता है। ऊंचाई का मान डिफ़ॉल्ट रूप से 100 हो जाता है यदि <a href=\"#/p5/createCanvas\">createCanvas()</a> का उपयोग नहीं किया जाता है कार्यक्रम।"
-      ]
-    },
-    "fullscreen": {
-      "description": [
-        "यदि तर्क दिया गया है, तो तर्क के मूल्य के आधार पर स्केच को पूर्णस्क्रीन पर सेट करता है या नहीं। यदि कोई तर्क नहीं दिया जाता है, तो वर्तमान पूर्णस्क्रीन स्थिति लौटाता है। ध्यान दें कि ब्राउज़र प्रतिबंधों के कारण इसे केवल उपयोगकर्ता इनपुट पर ही कॉल किया जा सकता है, उदाहरण के लिए , माउस प्रेस पर नीचे दिए गए उदाहरण की तरह।"
-      ],
-      "returns": "बूलियन: वर्तमान पूर्ण स्क्रीन स्थिति",
-      "params": {
-        "val": "Boolean: (Optional) whether the sketch should be in fullscreen mode or not"
-      }
-    },
-    "pixelDensity": {
-      "description": [
-        "उच्च पिक्सेल घनत्व डिस्प्ले के लिए पिक्सेल स्केलिंग सेट करता है। डिफ़ॉल्ट रूप से पिक्सेल घनत्व प्रदर्शन घनत्व से मेल खाने के लिए सेट होता है, इसे बंद करने के लिए पिक्सेल घनत्व (1) पर कॉल करें। <a href=\"#/p5/pixelDensity\">pixelDensity() </a>पर कॉल करना बिना किसी तर्क के स्केच का वर्तमान पिक्सेल घनत्व लौटाता है।"
-      ],
-      "params": {
-        "val": "Number: whether or how much the sketch should scale"
-      }
-    },
-    "displayDensity": {
-      "description": [
-        "Returns the pixel density of the current display the sketch is running on."
-      ],
-      "returns": "संख्या: मॉनिटर की वर्तमान पिक्सेल घनत्व"
-    },
-    "getURL": {
-      "description": [
-        "Gets the current URL. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using the editor's present or share URLs."
-      ],
-      "returns": "स्ट्रिंग: URL"
-    },
-    "getURLPath": {
-      "description": [
-        "Gets the current URL path as an array. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using the editor's present or share URLs."
-      ],
-      "returns": "फिक्स: पते के घटक"
-    },
-    "getURLParams": {
-      "description": [
-        "Gets the current URL params as an Object. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using the editor's present or share URLs."
-      ],
-      "returns": "ऑब्जेक्ट: URL पैरामीटर"
-    },
     "preload": {
       "description": [
         "<a href=\"#/p5/setup\">setup()</a> से पहले सीधे कॉल किया जाता है, <a href=\"#/p5/preload\">preload()</a> फ़ंक्शन है अवरुद्ध तरीके से बाहरी फ़ाइलों के एसिंक्रोनस लोडिंग को संभालने के लिए उपयोग किया जाता है। यदि एक प्रीलोड फ़ंक्शन परिभाषित किया गया है, तो <a href=\"#/p5/setup\">setup()</a> तब तक प्रतीक्षा करेगा जब तक कि कोई भी लोड कॉल समाप्त न हो जाए . लोड कॉल के अलावा कुछ नहीं (<a href=\"#/p5/loadImage\">loadImage</a>, <a href=\"#/p5/loadJSON\">loadJSON</a>, <a href= \"#/p5/loadFont\">loadFont</a>, <a href=\"#/p5/loadStrings\">loadStrings</a>, आदि) प्रीलोड फ़ंक्शन के अंदर होना चाहिए। यदि एसिंक्रोनस लोडिंग है पसंदीदा, लोड विधियों को इसके बजाय <a href=\"#/p5/setup\">setup()</a> या कहीं भी कॉलबैक पैरामीटर के उपयोग के साथ कॉल किया जा सकता है।",
