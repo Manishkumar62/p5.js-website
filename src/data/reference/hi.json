@@ -458,14 +458,14 @@
         "चाप हमेशा दक्षिणावर्त खींची जाती है, जहां से प्रारंभ गिरती है, जहां दीर्घवृत्त पर स्टॉप गिरती है। किसी भी कोण में TWO_PI को जोड़ने या घटाने से वह नहीं बदलता जहां वे गिरते हैं। यदि दोनों प्रारंभ और स्टॉप एक ही स्थान पर गिरते हैं, तो एक पूर्ण दीर्घवृत्त खींचा जाएगा। ध्यान रखें कि y-अक्ष नीचे की दिशा में बढ़ता है, इसलिए कोणों को धनात्मक x-दिशा (\"3 बजे\") से दक्षिणावर्त मापा जाता है।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the arc's ellipse",
-        "y": "Number: y-coordinate of the arc's ellipse",
-        "w": "Number: width of the arc's ellipse by default",
-        "h": "Number: height of the arc's ellipse by default",
-        "start": "Number: angle to start the arc, specified in radians",
-        "stop": "Number: angle to stop the arc, specified in radians",
-        "mode": "Constant: (Optional) optional parameter to determine the way of drawing  the arc. either CHORD, PIE or OPEN",
-        "detail": "Integer: (Optional) optional parameter for WebGL mode only. This is to  specify the number of vertices that makes up the  perimeter of the arc. Default value is 25. Won't  draw a stroke for a detail of more than 50."
+        "x": "संख्या: चाप के दीर्घवृत्त का x-निर्देशांक",
+        "y": "संख्या: चाप के दीर्घवृत्त का y-निर्देशांक",
+        "w": "संख्या: डिफ़ॉल्ट रूप से चाप के दीर्घवृत्त की चौड़ाई",
+        "h": "संख्या: डिफ़ॉल्ट रूप से चाप के दीर्घवृत्त की ऊँचाई",
+        "start": "संख्या: रेडियंस में निर्दिष्ट चाप शुरू करने के लिए कोण",
+        "stop": "संख्या: रेडियंस में निर्दिष्ट चाप को रोकने के लिए कोण",
+        "mode": "कांस्टेंट: (वैकल्पिक) वैकल्पिक पैरामीटर चाप को खींचने का तरीका निर्धारित करने के लिए। या तो CHORD, PIE या OPEN",
+        "detail": "पूर्णांक: (वैकल्पिक) केवल WebGL मोड के लिए वैकल्पिक पैरामीटर। यह चाप की परिधि बनाने वाले शीर्षों की संख्या को निर्दिष्ट करना है। डिफ़ॉल्ट मान 25 है। 50 से अधिक के description के लिए कोई स्ट्रोक नहीं होगा।"
       }
     },
     "ellipse": {
@@ -474,21 +474,21 @@
         "समान चौड़ाई और ऊंचाई वाला एक दीर्घवृत्त एक वृत्त है। मूल को <a href=\"#/p5/ellipseMode\">ellipseMode()</a> फ़ंक्शन के साथ बदला जा सकता है।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the center of ellipse.",
-        "y": "Number: y-coordinate of the center of ellipse.",
-        "w": "Number: width of the ellipse.",
-        "h": "Number: (Optional) height of the ellipse.",
-        "detail": "Integer: (Optional) optional parameter for WebGL mode only. This is to  specify the number of vertices that makes up the  perimeter of the ellipse. Default value is 25. Won't  draw a stroke for a detail of more than 50."
+        "x": "संख्या: दीर्घवृत्त के केंद्र का x-निर्देशांक।",
+        "y": "संख्या: दीर्घवृत्त के केंद्र का y-निर्देशांक।",
+        "w": "संख्या: दीर्घवृत्त की चौड़ाई।",
+        "h": "संख्या: (वैकल्पिक) अंडाकार की ऊंचाई।",
+        "detail": "पूर्णांक: (वैकल्पिक) केवल WebGL मोड के लिए वैकल्पिक पैरामीटर। यह दीर्घवृत्त की परिधि बनाने वाले शीर्षों की संख्या को निर्दिष्ट करने के लिए है। डिफ़ॉल्ट मान 25 है। 50 से अधिक के description के लिए कोई स्ट्रोक नहीं होगा।"
       }
     },
     "circle": {
       "description": [
-        "Draws a circle to the screen. A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre. This function is a special case of the ellipse() function, where the width and height of the ellipse are the same. Height and width of the ellipse correspond to the diameter of the circle. By default, the first two parameters set the location of the centre of the circle, the third sets the diameter of the circle."
+        "स्क्रीन पर एक वृत्त खींचता है। एक वृत्त एक साधारण बंद आकृति है। यह एक समतल में उन सभी बिंदुओं का समुच्चय है जो एक दिए गए बिंदु, केंद्र से एक निश्चित दूरी पर हैं। यह फ़ंक्शन <a href=\"#/p5/ellipse\">ellipse()</a> फ़ंक्शन का एक विशेष मामला है, जहां दीर्घवृत्त की चौड़ाई और ऊंचाई समान होती है। दीर्घवृत्त की ऊँचाई और चौड़ाई वृत्त के व्यास के अनुरूप होती है। डिफ़ॉल्ट रूप से, पहले दो पैरामीटर सर्कल के केंद्र का स्थान निर्धारित करते हैं, तीसरा सर्कल के व्यास को सेट करता है।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the centre of the circle.",
-        "y": "Number: y-coordinate of the centre of the circle.",
-        "d": "Number: diameter of the circle."
+        "x": "संख्या: वृत्त के केंद्र का x-निर्देशांक।",
+        "y": "संख्या: वृत्त के केंद्र का y-निर्देशांक।",
+        "d": "संख्या: सर्कल का व्यास।"
       }
     },
     "line": {
@@ -496,12 +496,12 @@
         "स्क्रीन पर एक रेखा (दो बिंदुओं के बीच एक सीधा पथ) खींचता है। यदि केवल 4 पैरामीटर के साथ कॉल किया जाता है, तो यह 1 पिक्सेल की डिफ़ॉल्ट चौड़ाई के साथ 2D में एक रेखा खींचेगा। इस चौड़ाई को <a href=\"#/p5/strokeWeight\"> stokeWeight()</a>का उपयोग करके संशोधित किया जा सकता है फ़ंक्शन। एक लाइन को भरा नहीं जा सकता है, इसलिए <a href=\"#/p5/fill\">fill()</a> फंक्शन होगा किसी रेखा के रंग को प्रभावित न करें। इसलिए किसी रेखा को रंगने के लिए, <a href=\"#/p5/stroke\">stroke()</a> फ़ंक्शन का उपयोग करें।"
       ],
       "params": {
-        "x1": "Number: the x-coordinate of the first point",
-        "y1": "Number: the y-coordinate of the first point",
-        "x2": "Number: the x-coordinate of the second point",
-        "y2": "Number: the y-coordinate of the second point",
-        "z1": "Number: the z-coordinate of the first point",
-        "z2": "Number: the z-coordinate of the second point"
+        "X1": "संख्या: पहले बिंदु का x-निर्देशांक",
+        "y1": "संख्या: पहले बिंदु का y-निर्देशांक",
+        "x2": "संख्या: दूसरे बिंदु का x-निर्देशांक",
+        "y2": "संख्या: दूसरे बिंदु का y-निर्देशांक",
+        "z1": "संख्या: पहले बिंदु का z-निर्देशांक",
+        "z2": "संख्या: दूसरे बिंदु का z-निर्देशांक"
       }
     },
     "point": {
@@ -509,10 +509,10 @@
         "एक बिंदु खींचता है, एक पिक्सेल के आयाम पर अंतरिक्ष में एक निर्देशांक। पहला पैरामीटर बिंदु के लिए क्षैतिज मान है, दूसरा पैरामीटर बिंदु के लिए लंबवत मान है। बिंदु का रंग <a href =\"#/p5/stoke\">stoke()</a> के साथ बदल जाता है फ़ंक्शन। बिंदु का आकार <a href=\"#/p5/strokeWeight\">strokeWeight()</a से बदला जा सकता है > समारोह।"
       ],
       "params": {
-        "x": "Number: the x-coordinate",
-        "y": "Number: the y-coordinate",
-        "z": "Number: (Optional) the z-coordinate (for WebGL mode)",
-        "coordinate_vector": "p5.Vector: the coordinate vector"
+        "x": "संख्या: x-निर्देशांक",
+        "y": "संख्या: y-निर्देशांक",
+        "z": "संख्या: (वैकल्पिक) z-निर्देशांक (WebGL मोड के लिए)",
+        "coordinate_vector": "p5.वेक्टर: निर्देशांक वेक्टर"
       }
     },
     "quad": {
@@ -520,20 +520,20 @@
         "कैनवास पर एक क्वाड खींचता है। एक क्वाड एक चतुर्भुज, एक चार भुजा वाला बहुभुज है। यह एक आयत के समान है, लेकिन इसके किनारों के बीच के कोण नब्बे डिग्री तक सीमित नहीं हैं। मापदंडों की पहली जोड़ी (x1,y1) सेट पहले शीर्ष और बाद के जोड़े को परिभाषित आकार के चारों ओर दक्षिणावर्त या वामावर्त आगे बढ़ना चाहिए। z- तर्क केवल तभी काम करते हैं जब quad() का उपयोग WEBGL मोड में किया जाता है।"
       ],
       "params": {
-        "x1": "Number: the x-coordinate of the first point",
-        "y1": "Number: the y-coordinate of the first point",
-        "x2": "Number: the x-coordinate of the second point",
-        "y2": "Number: the y-coordinate of the second point",
-        "x3": "Number: the x-coordinate of the third point",
-        "y3": "Number: the y-coordinate of the third point",
-        "x4": "Number: the x-coordinate of the fourth point",
-        "y4": "Number: the y-coordinate of the fourth point",
-        "detailX": "Integer: (Optional) number of segments in the x-direction",
-        "detailY": "Integer: (Optional) number of segments in the y-direction",
-        "z1": "Number: the z-coordinate of the first point",
-        "z2": "Number: the z-coordinate of the second point",
-        "z3": "Number: the z-coordinate of the third point",
-        "z4": "Number: the z-coordinate of the fourth point"
+        "X1": "संख्या: पहले बिंदु का x-निर्देशांक",
+        "y1": "संख्या: पहले बिंदु का y-निर्देशांक",
+        "x2": "संख्या: दूसरे बिंदु का x-निर्देशांक",
+        "y2": "संख्या: दूसरे बिंदु का y-निर्देशांक",
+        "x3": "संख्या: तीसरे बिंदु का x-निर्देशांक",
+        "y3": "संख्या: तीसरे बिंदु का y-निर्देशांक",
+        "x4": "संख्या: चौथे बिंदु का x-निर्देशांक",
+        "y4": "संख्या: चौथे बिंदु का y-निर्देशांक",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-दिशा में खंडों की संख्या",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-दिशा में खंडों की संख्या",
+        "z1": "संख्या: पहले बिंदु का z-निर्देशांक",
+        "z2": "संख्या: दूसरे बिंदु का z-निर्देशांक",
+        "z3": "संख्या: तीसरे बिंदु का z-निर्देशांक",
+        "z4": "संख्या: चौथे बिंदु का z-निर्देशांक"
       }
     },
     "rect": {
@@ -542,31 +542,31 @@
         "पांचवां, छठा, सातवां और आठवां पैरामीटर, यदि निर्दिष्ट किया गया है, क्रमशः शीर्ष-बाएं, शीर्ष-दाएं, निचले-दाएं और निचले-बाएं कोनों के लिए कोने त्रिज्या निर्धारित करें। एक छोड़ा गया कोने त्रिज्या पैरामीटर के मान पर सेट किया गया है पैरामीटर सूची में पहले निर्दिष्ट त्रिज्या मान।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the rectangle.",
-        "y": "Number: y-coordinate of the rectangle.",
-        "w": "Number: width of the rectangle.",
-        "h": "Number: (Optional) height of the rectangle.",
-        "tl": "Number: (Optional) optional radius of top-left corner.",
-        "tr": "Number: (Optional) optional radius of top-right corner.",
-        "br": "Number: (Optional) optional radius of bottom-right corner.",
-        "bl": "Number: (Optional) optional radius of bottom-left corner.",
-        "detailX": "Integer: (Optional) number of segments in the x-direction (for WebGL mode)",
-        "detailY": "Integer: (Optional) number of segments in the y-direction (for WebGL mode)"
+        "x": "संख्या: आयत का x-निर्देशांक।",
+        "y": "संख्या: आयत का y-निर्देशांक।",
+        "w": "संख्या: आयत की चौड़ाई।",
+        "h": "संख्या: (वैकल्पिक) आयत की ऊंचाई।",
+        "tl": "संख्या: (वैकल्पिक) शीर्ष-बाएँ कोने की वैकल्पिक त्रिज्या।",
+        "tr": "संख्या: (वैकल्पिक) शीर्ष-दाएँ कोने की वैकल्पिक त्रिज्या।",
+        "br": "संख्या: (वैकल्पिक) निचले दाएं कोने की वैकल्पिक त्रिज्या।",
+        "bl": "संख्या: (वैकल्पिक) निचले-बाएँ कोने की वैकल्पिक त्रिज्या।",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-दिशा में खंडों की संख्या (WebGL मोड के लिए)",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-दिशा में खंडों की संख्या (WebGL मोड के लिए)"
       }
     },
     "square": {
       "description": [
-        "Draws a square to the screen. A square is a four-sided shape with every angle at ninety degrees, and equal side size. This function is a special case of the rect() function, where the width and height are the same, and the parameter is called \"s\" for side size. By default, the first two parameters set the location of the upper-left corner, the third sets the side size of the square. The way these parameters are interpreted, may be changed with the <a href=\"#/p5/rectMode\">rectMode()</a> function.",
-        "The fourth, fifth, sixth and seventh parameters, if specified, determine corner radius for the top-left, top-right, lower-right and lower-left corners, respectively. An omitted corner radius parameter is set to the value of the previously specified radius value in the parameter list."
+        "स्क्रीन पर एक वर्ग बनाता है। एक वर्ग एक चार भुजाओं वाला आकार होता है, जिसमें हर कोण नब्बे डिग्री पर होता है, और भुजाओं का आकार बराबर होता है। यह फ़ंक्शन rect() फ़ंक्शन का एक विशेष मामला है, जहां चौड़ाई और ऊंचाई समान होती है, और साइड आकार के लिए पैरामीटर को \"s\" कहा जाता है। डिफ़ॉल्ट रूप से, पहले दो पैरामीटर ऊपरी-बाएँ कोने का स्थान सेट करते हैं, तीसरा वर्ग के पार्श्व आकार को सेट करता है। जिस तरह से इन मापदंडों की व्याख्या की जाती है, उसे <a href=\"#/p5/rectMode\">rectMode()</a> फ़ंक्शन के साथ बदला जा सकता है।",
+        "चौथा, पाँचवाँ, छठा और सातवाँ पैरामीटर, यदि निर्दिष्ट किया गया है, क्रमशः शीर्ष-बाएँ, शीर्ष-दाएँ, निचले-दाएँ और निचले-बाएँ कोनों के लिए कोने का दायरा निर्धारित करें। एक छोड़े गए कोने त्रिज्या पैरामीटर पैरामीटर सूची में पहले निर्दिष्ट त्रिज्या मान के मान पर सेट है।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the square.",
-        "y": "Number: y-coordinate of the square.",
-        "s": "Number: side size of the square.",
-        "tl": "Number: (Optional) optional radius of top-left corner.",
-        "tr": "Number: (Optional) optional radius of top-right corner.",
-        "br": "Number: (Optional) optional radius of bottom-right corner.",
-        "bl": "Number: (Optional) optional radius of bottom-left corner."
+        "x": "संख्या: वर्ग का x-निर्देशांक।",
+        "y": "संख्या: वर्ग का y-निर्देशांक।",
+        "s": "संख्या: वर्ग के किनारे का आकार।",
+        "tl": "संख्या: (वैकल्पिक) शीर्ष-बाएँ कोने की वैकल्पिक त्रिज्या।",
+        "tr": "संख्या: (वैकल्पिक) शीर्ष-दाएँ कोने की वैकल्पिक त्रिज्या।",
+        "br": "संख्या: (वैकल्पिक) निचले दाएं कोने की वैकल्पिक त्रिज्या।",
+        "bl": "संख्या: (वैकल्पिक) निचले-बाएँ कोने की वैकल्पिक त्रिज्या।"
       }
     },
     "triangle": {
@@ -574,129 +574,133 @@
         "एक त्रिभुज को कैनवास पर खींचता है। एक त्रिभुज तीन बिंदुओं को जोड़कर बनाया गया एक विमान है। पहले दो तर्क पहले बिंदु को निर्दिष्ट करते हैं, मध्य दो तर्क दूसरे बिंदु को निर्दिष्ट करते हैं, और अंतिम दो तर्क तीसरे बिंदु को निर्दिष्ट करते हैं।"
       ],
       "params": {
-        "x1": "Number: x-coordinate of the first point",
-        "y1": "Number: y-coordinate of the first point",
-        "x2": "Number: x-coordinate of the second point",
-        "y2": "Number: y-coordinate of the second point",
-        "x3": "Number: x-coordinate of the third point",
-        "y3": "Number: y-coordinate of the third point"
+        "X1": "संख्या: पहले बिंदु का x-निर्देशांक",
+        "y1": "संख्या: पहले बिंदु का y-निर्देशांक",
+        "x2": "संख्या: दूसरे बिंदु का x-निर्देशांक",
+        "y2": "संख्या: दूसरे बिंदु का y-निर्देशांक",
+        "x3": "संख्या: तीसरे बिंदु का x-निर्देशांक",
+        "y3": "संख्या: तीसरे बिंदु का y-निर्देशांक"
       }
     },
     "ellipseMode": {
       "description": [
         "उस स्थान को संशोधित करता है जहां से दीर्घवृत्त खींचे जाते हैं, जिस तरह से पैरामीटर दिए गए हैं <a href=\"#/p5/ellipse\">ellipse()</a>, <a href=\"#/p5/circle\">circle()</a> और <a href=\" #/p5/arc\">arc()</a> की व्याख्या की जाती है।",
-        "डिफ़ॉल्ट मोड CENTER है, जिसमें पहले दो मापदंडों की व्याख्या आकृति के केंद्र बिंदु के रूप में क्रमशः x और y निर्देशांक के रूप में की जाती है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
-        "ellipseMode(RADIUS) आकृति के केंद्र बिंदु के x और y निर्देशांक के रूप में पहले दो पैरामीटर का भी उपयोग करता है, लेकिन आकार की चौड़ाई और ऊंचाई के आधे हिस्से को निर्दिष्ट करने के लिए तीसरे और चौथे पैरामीटर का उपयोग करता है।",
-        "ellipseMode(CORNER) आकृति के ऊपरी-बाएँ कोने के रूप में पहले दो मापदंडों की व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
-        "ellipseMode(CORNERS) पहले दो मापदंडों को दीर्घवृत्त के बाउंडिंग बॉक्स के एक कोने के स्थान के रूप में और तीसरे और चौथे पैरामीटर को विपरीत कोने के स्थान के रूप में व्याख्या करता है।",
-        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और जावास्क्रिप्ट एक केस-संवेदी भाषा है।"
+        "डिफ़ॉल्ट मोड <code>CENTER</code> है, जिसमें पहले दो मापदंडों की व्याख्या आकृति के केंद्र बिंदु के रूप में क्रमशः x और y निर्देशांक के रूप में की जाती है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
+        "<code>ellipseMode(RADIUS)</code> आकृति के केंद्र बिंदु के x और y निर्देशांक के रूप में पहले दो पैरामीटर का भी उपयोग करता है, लेकिन आकार की चौड़ाई और ऊंचाई के आधे हिस्से को निर्दिष्ट करने के लिए तीसरे और चौथे पैरामीटर का उपयोग करता है।",
+        "<code>ellipseMode(CORNER)</code> आकृति के ऊपरी-बाएँ कोने के रूप में पहले दो मापदंडों की व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
+        "<code>ellipseMode(CORNERS)</code> पहले दो मापदंडों को दीर्घवृत्त के बाउंडिंग बॉक्स के एक कोने के स्थान के रूप में और तीसरे और चौथे पैरामीटर को विपरीत कोने के स्थान के रूप में व्याख्या करता है।",
+        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और Javascript एक केस-संवेदी भाषा है।"
       ],
       "params": {
-        "mode": "Constant: either CENTER, RADIUS, CORNER, or CORNERS"
+        "mode": "कांस्टेंट: या तो CENTER, RADIUS, CORNER या CORNERS"
       }
     },
     "noSmooth": {
       "description": [
-        "सभी ज्यामिति को दांतेदार (उपनाम) किनारों के साथ खींचता है। ध्यान दें कि <a href=\"#/p5/smooth\">smooth()</a> डिफ़ॉल्ट रूप से 2D मोड में सक्रिय है, इसलिए कॉल करना आवश्यक है <a href=\"#/p5/noSmooth\">noSmooth()</a> ज्योमेट्री, इमेज और फॉण्ट की स्मूदिंग को डिसेबल करने के लिए। 3D मोड में <a href=\"#/p5/noSmooth\">noSmooth()</a> डिफ़ॉल्ट रूप से सक्षम है, इसलिए <a href=\"#/p5/smooth\">smooth()</a> को कॉल करना आवश्यक है यदि आप अपनी ज्यामिति पर चिकने (एंटीअलाइज्ड) किनारे चाहते हैं।"
+        "सभी ज्यामिति को दांतेदार (उपनाम) किनारों के साथ खींचता है।",
+        "ध्यान दें कि <a href=\"#/p5/smooth\">smooth()</a> डिफ़ॉल्ट रूप से 2D मोड में सक्रिय है, इसलिए कॉल करना आवश्यक है <a href=\"#/p5/noSmooth\">noSmooth()</a> ज्योमेट्री, इमेज और फॉण्ट की स्मूदिंग को डिसेबल करने के लिए।",
+        "3D मोड में <a href=\"#/p5/noSmooth\">noSmooth()</a> डिफ़ॉल्ट रूप से सक्षम है, इसलिए <a href=\"#/p5/smooth\">smooth()</a> को कॉल करना आवश्यक है यदि आप अपनी ज्यामिति पर चिकने (एंटीअलाइज्ड) किनारे चाहते हैं।"
       ]
     },
     "rectMode": {
       "description": [
         "उस स्थान को संशोधित करता है जहां से पैरामीटर दिए गए तरीके को बदलकर आयतें खींची जाती हैं <a href=\"#/p5/rect\">rect()</a> की व्याख्या की जाती है।",
-        "डिफ़ॉल्ट मोड कॉर्नर है, जो पहले दो मापदंडों को आकार के ऊपरी-बाएँ कोने के रूप में व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
-        "रेक्टमोड (कॉर्नर) पहले दो मापदंडों को कोनों में से एक के स्थान के रूप में और तीसरे और चौथे पैरामीटर को तिरछे विपरीत कोने के स्थान के रूप में व्याख्या करता है। ध्यान दें, आयत निर्देशांक के बीच खींचा जाता है, इसलिए यह आवश्यक नहीं है कि पहला कोना ऊपरी बाएँ कोना होगा।",
-        "rectMode(CENTER) आकृति के केंद्र बिंदु के रूप में पहले दो मापदंडों की व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
-        "rectMode(RADIUS) आकृति के केंद्र बिंदु के रूप में पहले दो मापदंडों का भी उपयोग करता है, लेकिन क्रमशः आकार की चौड़ाई और ऊंचाई के आधे हिस्से को निर्दिष्ट करने के लिए तीसरे और चौथे पैरामीटर का उपयोग करता है।",
-        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और जावास्क्रिप्ट एक केस-संवेदी भाषा है।"
+        "डिफ़ॉल्ट मोड <code>CORNER</code> है, जो पहले दो मापदंडों को आकार के ऊपरी-बाएँ कोने के रूप में व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
+        "<code>rectMode(CORNERS)</code> पहले दो मापदंडों को कोनों में से एक के स्थान के रूप में और तीसरे और चौथे पैरामीटर को तिरछे विपरीत कोने के स्थान के रूप में व्याख्या करता है। ध्यान दें, आयत निर्देशांक के बीच खींचा जाता है, इसलिए यह आवश्यक नहीं है कि पहला कोना ऊपरी बाएँ कोना होगा।",
+        "<code>rectMode(CENTER)</code> आकृति के केंद्र बिंदु के रूप में पहले दो मापदंडों की व्याख्या करता है, जबकि तीसरा और चौथा पैरामीटर इसकी चौड़ाई और ऊंचाई है।",
+        "<code>rectMode(RADIUS)</code> आकृति के केंद्र बिंदु के रूप में पहले दो मापदंडों का भी उपयोग करता है, लेकिन क्रमशः आकार की चौड़ाई और ऊंचाई के आधे हिस्से को निर्दिष्ट करने के लिए तीसरे और चौथे पैरामीटर का उपयोग करता है।",
+        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और Javascript एक केस-संवेदी भाषा है।"
       ],
       "params": {
-        "mode": "Constant: either CORNER, CORNERS, CENTER, or RADIUS"
+        "mode": "कांस्टेंट: या तो CENTER, RADIUS, CORNER या CORNERS"
       }
     },
     "smooth": {
       "description": [
-        "सभी ज्यामिति को चिकने (एंटी-अलियास) किनारों के साथ खींचता है। <a href=\"#/p5/smooth\">smooth()</a> आकार बदलने वाली छवियों की छवि गुणवत्ता में भी सुधार करेगा। ध्यान दें कि <a href=\"#/p5/smooth\">smooth()</a> डिफ़ॉल्ट रूप से 2D मोड में सक्रिय है; <a href=\"#/p5/noSmooth\">noSmooth()</a> का इस्तेमाल ज्योमेट्री, इमेज और फोंट की स्मूदिंग को डिसेबल करने के लिए किया जा सकता है। 3डी मोड में, <a href=\"#/p5/noSmooth\">noSmooth()</a> डिफ़ॉल्ट रूप से सक्षम है, इसलिए <a href=\"#/p5/smooth\">smooth()</a> को कॉल करना आवश्यक है यदि आप अपनी ज्यामिति पर चिकने (एंटीअलाइज्ड) किनारे चाहते हैं।"
+        "सभी ज्यामिति को चिकने (एंटी-अलियास) किनारों के साथ खींचता है। <a href=\"#/p5/smooth\">smooth()</a> आकार बदलने वाली छवियों की छवि गुणवत्ता में भी सुधार करेगा।","ध्यान दें कि <a href=\"#/p5/smooth\">smooth()</a> डिफ़ॉल्ट रूप से 2D मोड में सक्रिय है; <a href=\"#/p5/noSmooth\">noSmooth()</a> का इस्तेमाल ज्योमेट्री, इमेज और फोंट की स्मूदिंग को डिसेबल करने के लिए किया जा सकता है।",
+        "3डी मोड में, <a href=\"#/p5/noSmooth\">noSmooth()</a> डिफ़ॉल्ट रूप से सक्षम है, इसलिए <a href=\"#/p5/smooth\">smooth()</a> को कॉल करना आवश्यक है यदि आप अपनी ज्यामिति पर चिकने (एंटीअलाइज्ड) किनारे चाहते हैं।"
       ]
     },
     "strokeCap": {
       "description": [
-        "लाइन एंडिंग को रेंडर करने के लिए स्टाइल सेट करता है। ये सिरे या तो गोल, चौकोर या विस्तारित होते हैं, जिनमें से प्रत्येक को संबंधित मापदंडों के साथ निर्दिष्ट किया जाता है: ROUND, SQUARE और PROJECT। डिफ़ॉल्ट कैप राउंड है।",
-        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और जावास्क्रिप्ट एक केस-संवेदी भाषा है।"
+        "लाइन एंडिंग को रेंडर करने के लिए स्टाइल सेट करता है। ये सिरे या तो गोल, चौकोर या विस्तारित होते हैं, जिनमें से प्रत्येक को संबंधित मापदंडों के साथ निर्दिष्ट किया जाता है:<code>ROUND</code>, <code>SQUARE</code> या <code>PROJECT</code>। डिफ़ॉल्ट कैप <code>ROUND</code> है।",
+        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और Javascript एक केस-संवेदी भाषा है।"
       ],
       "params": {
-        "cap": "Constant: either ROUND, SQUARE or PROJECT"
+        "cap": "कांस्टेंट: either ROUND, SQUARE or PROJECT"
       }
     },
     "strokeJoin": {
       "description": [
-        "जोड़ों की शैली सेट करता है जो लाइन सेगमेंट को जोड़ता है। ये जोड़ या तो मिटर्ड, बेवेल या गोलाकार होते हैं और संबंधित पैरामीटर एमआईटीईआर, बेवेल और राउंड के साथ निर्दिष्ट होते हैं। डिफ़ॉल्ट संयुक्त एमआईटीईआर है। इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और जावास्क्रिप्ट एक केस-संवेदी भाषा है।",
-        "The parameter to this method must be written in ALL CAPS because they are predefined as constants in ALL CAPS and Javascript is a case-sensitive language."
+        "लाइन सेगमेंट को जोड़ने वाले जोड़ों की शैली सेट करता है। ये जोड़ या तो माइटर्ड, बेवेल, या गोलाकार हैं और संबंधित पैरामीटर के साथ निर्दिष्ट हैं: <code>MITER</code>, <code>BEVEL</code> या <code>ROUND</code>। 2D मोड में डिफ़ॉल्ट ज्वाइंट <code>MITER</code> है और WebGL मोड में <code>ROUND</code> है।",
+        "इस पद्धति के पैरामीटर को सभी CAPS में लिखा जाना चाहिए क्योंकि वे सभी CAPS में स्थिरांक के रूप में पूर्वनिर्धारित हैं और Javascript एक केस-संवेदी भाषा है।"
       ],
       "params": {
-        "join": "Constant: either MITER, BEVEL, ROUND"
+        "join": "कांस्टेंट: या तो MITER, BEVEL, ROUND"
       }
     },
     "strokeWeight": {
       "description": [
-        "Sets the width of the stroke used for lines, points and the border around shapes. All widths are set in units of pixels."
+        "रेखाओं, बिंदुओं और आकृतियों के चारों ओर बॉर्डर के लिए उपयोग किए जाने वाले स्ट्रोक की चौड़ाई सेट करता है। सभी चौड़ाई पिक्सेल की इकाइयों में सेट की जाती हैं।",
+        "ध्यान दें कि यह किसी भी परिवर्तन या स्केलिंग से प्रभावित होता है जिसे पहले लागू किया गया है।"
       ],
       "params": {
-        "weight": "Number: the weight of the stroke (in pixels)"
+        "weight": "संख्या: स्ट्रोक का वजन (पिक्सेल में)"
       }
     },
     "bezier": {
       "description": [
         "स्क्रीन पर एक क्यूबिक बेज़ियर वक्र बनाता है। इन वक्रों को एंकर और नियंत्रण बिंदुओं की एक श्रृंखला द्वारा परिभाषित किया जाता है। पहले दो पैरामीटर पहले एंकर पॉइंट को निर्दिष्ट करते हैं और अंतिम दो पैरामीटर अन्य एंकर पॉइंट को निर्दिष्ट करते हैं, जो पहले और अंतिम बिंदु बन जाते हैं। वक्र पर। मध्य पैरामीटर दो नियंत्रण बिंदुओं को निर्दिष्ट करते हैं जो वक्र के आकार को परिभाषित करते हैं। लगभग बोलते हुए, नियंत्रण बिंदु वक्र को उनकी ओर \"खींचें\"।",
-        "बेज़ियर कर्व्स फ्रांसीसी ऑटोमोटिव इंजीनियर पियरे बेज़ियर द्वारा विकसित किए गए थे, और आमतौर पर कंप्यूटर ग्राफिक्स में धीरे-धीरे ढलान वाले वक्रों को परिभाषित करने के लिए उपयोग किए जाते हैं। <a href=\"#/p5/curve\">वक्र()</a> भी देखें।"
+        "बेज़ियर कर्व्स फ्रांसीसी ऑटोमोटिव इंजीनियर पियरे बेज़ियर द्वारा विकसित किए गए थे, और आमतौर पर कंप्यूटर ग्राफिक्स में धीरे-धीरे ढलान वाले वक्रों को परिभाषित करने के लिए उपयोग किए जाते हैं। <a href=\"#/p5/curve\">curve()</a> भी देखें।"
       ],
       "params": {
-        "x1": "Number: x-coordinate for the first anchor point",
-        "y1": "Number: y-coordinate for the first anchor point",
-        "x2": "Number: x-coordinate for the first control point",
-        "y2": "Number: y-coordinate for the first control point",
-        "x3": "Number: x-coordinate for the second control point",
-        "y3": "Number: y-coordinate for the second control point",
-        "x4": "Number: x-coordinate for the second anchor point",
-        "y4": "Number: y-coordinate for the second anchor point",
-        "z1": "Number: z-coordinate for the first anchor point",
-        "z2": "Number: z-coordinate for the first control point",
-        "z3": "Number: z-coordinate for the second control point",
-        "z4": "Number: z-coordinate for the second anchor point"
+        "x1": "संख्या: पहले एंकर बिंदु के लिए x-निर्देशांक",
+        "y1": "संख्या: पहले एंकर बिंदु के लिए y-निर्देशांक",
+        "x2": "संख्या: पहले नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y2": "संख्या: पहले नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x3": "संख्या: दूसरे नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y3": "संख्या: दूसरे नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x4": "संख्या: दूसरे एंकर बिंदु के लिए x-निर्देशांक",
+        "y4": "संख्या: दूसरे एंकर बिंदु के लिए y-निर्देशांक",
+        "z1": "संख्या: पहले एंकर बिंदु के लिए z-निर्देशांक",
+        "z2": "संख्या: पहले नियंत्रण बिंदु के लिए z-निर्देशांक",
+        "z3": "संख्या: दूसरे नियंत्रण बिंदु के लिए z-निर्देशांक",
+        "z4": "संख्या: दूसरे एंकर बिंदु के लिए z-निर्देशांक"
       }
     },
     "bezierDetail": {
       "description": [
-        "Sets the resolution at which Bezier's curve is displayed. The default value is 20.",
-        "Note, This function is only useful when using the WEBGL renderer as the default canvas renderer does not use this information."
+        "उस रिज़ॉल्यूशन को सेट करता है जिस पर बेज़ियर का कर्व प्रदर्शित होता है। डिफ़ॉल्ट मान 20 है।",
+        "नोट, यह फ़ंक्शन केवल WEBGL रेंडरर का उपयोग करते समय उपयोगी होता है क्योंकि डिफ़ॉल्ट कैनवास रेंडरर इस जानकारी का उपयोग नहीं करता है।"
       ],
       "params": {
-        "detail": "Number: resolution of the curves"
+        "detail": "संख्या: वक्रों का संकल्प"
       }
     },
     "bezierPoint": {
       "description": [
         "बेज़ियर वक्र के नियंत्रण और एंकर बिंदुओं के x या y समन्वय मानों को देखते हुए, यह स्थिति t पर बेज़ियर के x या y निर्देशांक का मूल्यांकन करता है। पैरामीटर a और d पहले और अंतिम बिंदुओं के x या y निर्देशांक हैं। वक्र पर जबकि बी और सी नियंत्रण बिंदुओं के हैं। अंतिम पैरामीटर टी परिणामी बिंदु की स्थिति है जो 0 और 1 के बीच दिया गया है। यह एक बार x निर्देशांक के साथ और दूसरी बार y निर्देशांक के साथ किया जा सकता है t पर एक बेजियर वक्र का स्थान प्राप्त करें।"
       ],
-      "returns": "स्थिति टी पर बेज़ियर वक्र का मूल्य",
+      "returns": "संख्या: स्थिति t पर बेजियर का मान",
       "params": {
-        "a": "Number: coordinate of first point on the curve",
-        "b": "Number: coordinate of first control point",
-        "c": "Number: coordinate of second control point",
-        "d": "Number: coordinate of second point on the curve",
-        "t": "Number: value between 0 and 1"
+        "a": "संख्या: वक्र पर पहले बिंदु का समन्वय",
+        "b": "संख्या: पहले नियंत्रण बिंदु का समन्वय",
+        "c": "संख्या: दूसरे नियंत्रण बिंदु का समन्वय",
+        "d": "संख्या: वक्र पर दूसरे बिंदु का समन्वय",
+        "t": "संख्या: 0 और 1 के बीच का मान"
       }
     },
     "bezierTangent": {
       "description": [
         "A, B, C, D के लिए स्थितिी t पर बेज़ियर के स्पर्शरेखा का मूल्यांकन करता है। पैरामीटर A और D वक्र पर पहले और आखिरी बिंदु हैं, और B और D नियंत्रण बिंदु हैं। अंतिम पैरामीटर t के बीच भिन्न होता है 0 और 1।"
       ],
-      "returns": "स्थिति में स्पर्शरेखा t",
+      "returns": "संख्या: स्थिति t पर स्पर्शरेखा",
       "params": {
-        "a": "Number: coordinate of first point on the curve",
-        "b": "Number: coordinate of first control point",
-        "c": "Number: coordinate of second control point",
-        "d": "Number: coordinate of second point on the curve",
-        "t": "Number: value between 0 and 1"
+        "a": "संख्या: वक्र पर पहले बिंदु का समन्वय",
+        "b": "संख्या: पहले नियंत्रण बिंदु का समन्वय",
+        "c": "संख्या: दूसरे नियंत्रण बिंदु का समन्वय",
+        "d": "संख्या: वक्र पर दूसरे बिंदु का समन्वय",
+        "t": "संख्या: 0 और 1 के बीच का मान"
       }
     },
     "curve": {
@@ -704,61 +708,61 @@
         "स्क्रीन पर दो बिंदुओं के बीच एक घुमावदार रेखा खींचता है, जिसे मध्य चार मापदंडों के रूप में दिया गया है। पहले दो पैरामीटर एक नियंत्रण बिंदु हैं, जैसे कि वक्र इस बिंदु से आया है, भले ही वह खींचा न गया हो। अंतिम दो पैरामीटर समान रूप से दूसरे का वर्णन करते हैं नियंत्रण बिंदु। <br /><br /> <a href=\"#/p5/curve\">curve()</a> कार्यों की श्रृंखला को एक साथ रखकर या <a href= \"#/p5/curveVertex\">curveVertex()</a>। एक अतिरिक्त फ़ंक्शन जिसे <a href=\"#/p5/curveTightness\">curveTightness()</a> कहा जाता है, की दृश्य गुणवत्ता के लिए नियंत्रण प्रदान करता है वक्र। <a href=\"#/p5/curve\">curve()</a> फ़ंक्शन Catmull-Rom splines का कार्यान्वयन है।"
       ],
       "params": {
-        "x1": "Number: x-coordinate for the beginning control point",
-        "y1": "Number: y-coordinate for the beginning control point",
-        "x2": "Number: x-coordinate for the first point",
-        "y2": "Number: y-coordinate for the first point",
-        "x3": "Number: x-coordinate for the second point",
-        "y3": "Number: y-coordinate for the second point",
-        "x4": "Number: x-coordinate for the ending control point",
-        "y4": "Number: y-coordinate for the ending control point",
-        "z1": "Number: z-coordinate for the beginning control point",
-        "z2": "Number: z-coordinate for the first point",
-        "z3": "Number: z-coordinate for the second point",
-        "z4": "Number: z-coordinate for the ending control point"
+        "x1": "संख्या: प्रारंभिक नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y1": "संख्या: प्रारंभिक नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x2": "संख्या: पहले बिंदु के लिए x-निर्देशांक",
+        "y2": "संख्या: पहले बिंदु के लिए y-निर्देशांक",
+        "x3": "संख्या: दूसरे बिंदु के लिए x-निर्देशांक",
+        "y3": "संख्या: दूसरे बिंदु के लिए y-निर्देशांक",
+        "x4": "संख्या: अंतिम नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y4": "संख्या: अंतिम नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "z1": "संख्या: प्रारंभिक नियंत्रण बिंदु के लिए z-निर्देशांक",
+        "z2": "संख्या: पहले बिंदु के लिए z-निर्देशांक",
+        "z3": "संख्या: दूसरे बिंदु के लिए z-निर्देशांक",
+        "z4": "संख्या: समाप्ति नियंत्रण बिंदु के लिए z-निर्देशांक"
       }
     },
     "curveDetail": {
       "description": [
-        "Sets the resolution at which curves display. The default value is 20 while the minimum value is 3.",
-        "This function is only useful when using the WEBGL renderer as the default canvas renderer does not use this information."
+        "रिज़ॉल्यूशन सेट करता है जिस पर घटता प्रदर्शित होता है। डिफ़ॉल्ट मान 20 है जबकि न्यूनतम मान 3 है।",
+        "यह फ़ंक्शन केवल WEBGL रेंडरर का उपयोग करते समय उपयोगी होता है क्योंकि डिफ़ॉल्ट कैनवास रेंडरर इस जानकारी का उपयोग नहीं करता है।"
       ],
       "params": {
-        "resolution": "Number: resolution of the curves"
+        "resolution": "संख्या: वक्रों का संकल्प"
       }
     },
     "curveTightness": {
       "description": [
-        "Modifies the quality of forms created with <a href=\"#/p5/curve\">curve()</a> and <a href=\"#/p5/curveVertex\">curveVertex()</a>.The parameter tightness determines how the curve fits to the vertex points. The value 0.0 is the default value for tightness (this value defines the curves to be Catmull-Rom splines) and the value 1.0 connects all the points with straight lines. Values within the range -5.0 and 5.0 will deform the curves but will leave them recognizable and as values increase in magnitude, they will continue to deform."
+        "<a href=\"#/p5/curve\">curve()</a> और <a href=\"#/p5/curveVertex\">curveVertex()</a> से बनाए गए फ़ॉर्म की गुणवत्ता में बदलाव करता है पैरामीटर की जकड़न यह निर्धारित करती है कि वक्र शीर्ष बिंदुओं पर कैसे फिट बैठता है। मान 0.0 जकड़न के लिए डिफ़ॉल्ट मान है (यह मान घटता को Catmull-Rom स्प्लिन होने के लिए परिभाषित करता है) और मान 1.0 सभी बिंदुओं को सीधी रेखाओं से जोड़ता है। रेंज -5.0 और 5.0 के भीतर के मान घटता को ख़राब कर देंगे लेकिन उन्हें पहचानने योग्य छोड़ देंगे और जैसे-जैसे परिमाण में मान बढ़ता जाएगा, वे ख़राब होते रहेंगे।"
       ],
       "params": {
-        "amount": "Number: amount of deformation from the original vertices"
+        "amount": "संख्या: मूल शिखर से विकृति की मात्रा"
       }
     },
     "curvePoint": {
       "description": [
-        "Evaluates the curve at position t for points a, b, c, d. The parameter t varies between 0 and 1, a and d are control points of the curve, and b and c are the start and end points of the curve. This can be done once with the x coordinates and a second time with the y coordinates to get the location of a curve at t."
+        "बिंदुओं a, b, c, d के लिए स्थिति t पर वक्र का मूल्यांकन करता है। पैरामीटर t 0 और 1 के बीच भिन्न होता है, a और d वक्र के नियंत्रण बिंदु हैं, और b और c वक्र के प्रारंभ और अंत बिंदु हैं। यह एक बार x निर्देशांक के साथ किया जा सकता है और दूसरी बार y निर्देशांक के साथ t पर वक्र का स्थान प्राप्त करने के लिए किया जा सकता है।"
       ],
-      "returns": "p5 ऑब्जेक्ट",
+      "returns": "संख्या: स्थिति t पर <a href=\"#/p5/curve\">Curve</a> मान",
       "params": {
-        "a": "Number: coordinate of first control point of the curve",
-        "b": "Number: coordinate of first point",
-        "c": "Number: coordinate of second point",
-        "d": "Number: coordinate of second control point",
-        "t": "Number: value between 0 and 1"
+        "a": "संख्या: वक्र के पहले नियंत्रण बिंदु का समन्वय",
+        "b": "संख्या: पहले बिंदु का समन्वय",
+        "c": "संख्या: दूसरे बिंदु का समन्वय",
+        "d": "संख्या: दूसरे नियंत्रण बिंदु का समन्वय",
+        "t": "संख्या: 0 और 1 के बीच का मान"
       }
     },
     "curveTangent": {
       "description": [
-        "Evaluates the tangent to the curve at position t for points a, b, c, d. The parameter t varies between 0 and 1, a and d are points on the curve, and b and c are the control points."
+        "बिंदुओं a, b, c, d के लिए स्थिति t पर वक्र की स्पर्शरेखा का मूल्यांकन करता है। पैरामीटर टी 0 और 1 के बीच भिन्न होता है, a और d वक्र पर बिंदु होते हैं, और b और c नियंत्रण बिंदु होते हैं।"
       ],
-      "returns": "स्थिति में स्पर्शरेखा t",
+      "returns": "संख्या: स्थिति t पर स्पर्शरेखा",
       "params": {
-        "a": "Number: coordinate of first control point",
-        "b": "Number: coordinate of first point on the curve",
-        "c": "Number: coordinate of second point on the curve",
-        "d": "Number: coordinate of second conrol point",
-        "t": "Number: value between 0 and 1"
+        "a": "संख्या: पहले नियंत्रण बिंदु का समन्वय",
+        "b": "संख्या: वक्र पर पहले बिंदु का समन्वय",
+        "c": "संख्या: वक्र पर दूसरे बिंदु का समन्वय",
+        "d": "संख्या: दूसरे नियंत्रण बिंदु का समन्वय",
+        "t": "संख्या: 0 और 1 के बीच का मान"
       }
     },
     "beginContour": {
@@ -769,49 +773,49 @@
     },
     "beginShape": {
       "description": [
-        "<a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\">endShape()</a> फ़ंक्शन का उपयोग करने से और अधिक निर्माण करने की अनुमति मिलती है जटिल रूप। <a href=\"#/p5/beginShape\">beginShape()</a> एक आकृति के लिए शीर्षों को रिकॉर्ड करना शुरू करता है और <a href=\"#/p5/endShape\">endShape()</a> रिकॉर्डिंग बंद कर देता है। प्रकार के पैरामीटर का मान यह बताता है कि दिए गए शीर्षों से किस प्रकार की आकृतियाँ बनानी हैं। बिना किसी विधा के निर्दिष्ट किए, आकार कोई भी अनियमित बहुभुज हो सकता है।",
-        "<a href=\"#/p5/beginShape\">beginShape()</a> के लिए उपलब्ध पैरामीटर POINTS, LINES, TRIANGLES, TRIANGLE_FAN, TRIANGLE_STRIP, QUADS, QUAD_STRIP, और TESS (केवल WebGL) हैं। कॉल करने के बाद <a href=\"#/p5/beginShape\">beginShape()</a> फ़ंक्शन, <a href=\"#/p5/vertex\">vertex()</a> कमांड की एक श्रृंखला होनी चाहिए अनुसरण करें। आकृति बनाना बंद करने के लिए, <a href=\"#/p5/endShape\">endShape()</a> पर कॉल करें। प्रत्येक आकृति को वर्तमान स्ट्रोक रंग से रेखांकित किया जाएगा और भरण रंग से भरा जाएगा।",
-        "रूपांतरण जैसे <a href=\"#/p5/translate\">translate()</a>, <a href=\"#/p5/rotate\">rotate()</a>, और <a href=\"#/p5/scale\">scale()</a> <a href=\"#/p5/beginShape\">beginShape()</a> के भीतर काम नहीं करते। यह भी नहीं है अन्य आकृतियों का उपयोग करना संभव है, जैसे कि <a href=\"#/p5/ellipse\">ellipse()</a> या <a href=\"#/p5/rect\">rect()</a > के भीतर <a href=\"#/p5/beginShape\">beginShape()</a>।",
-        "LINES Draw a series of unconnected line segments (individual lines)",
-        "TRIANGLES Draw a series of separate triangles",
-        "TRIANGLE_FAN Draw a series of connected triangles sharing the first vertex in a fan-like fashion",
-        "TRIANGLE_STRIP Draw a series of connected triangles in strip fashion",
-        "QUADS Draw a series of seperate quad",
-        "QUAD_STRIP Draw quad strip using adjacent edges to form the next quad",
-        "TESS (WebGl only) Handle irregular polygon for filling curve by explicit tessellation",
-        "After calling the <a href=\"#/p5/beginShape\">beginShape()</a> function, a series of <a href=\"#/p5/vertex\">vertex()</a> commands must follow. To stop drawing the shape, call <a href=\"#/p5/endShape\">endShape()</a>. Each shape will be outlined with the current stroke color and filled with the fill color.",
-        "Transformations such as <a href=\"#/p5/translate\">translate()</a>, <a href=\"#/p5/rotate\">rotate()</a>, and <a href=\"#/p5/scale\">scale()</a> do not work within <a href=\"#/p5/beginShape\">beginShape()</a>. It is also not possible to use other shapes, such as <a href=\"#/p5/ellipse\">ellipse()</a> or <a href=\"#/p5/rect\">rect()</a> within <a href=\"#/p5/beginShape\">beginShape()</a>."
+        "<a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\">endShape()</a> फ़ंक्शंस का उपयोग करने से अधिक बनाने की अनुमति मिलती है जटिल रूप। <a href=\"#/p5/beginShape\">beginShape()</a> किसी आकृति के लिए कोने रिकॉर्ड करना शुरू करता है और <a href=\"#/p5/endShape\">endShape()</a> रिकॉर्डिंग बंद कर देता है। kind पैरामीटर का मान यह बताता है कि प्रदान किए गए शीर्षों से किस प्रकार की आकृतियाँ बनानी हैं। कोई मोड निर्दिष्ट न होने पर, आकार कोई भी अनियमित बहुभुज हो सकता है।",
+        "<a href=\"#/p5/beginShape\">beginShape()</a> के लिए उपलब्ध पैरामीटर हैं:",
+        "POINTS बिंदुओं की एक श्रृंखला बनाएं",
+        "LINES असंबद्ध रेखा खंडों (व्यक्तिगत रेखाएं) की एक श्रृंखला बनाएं",
+        "TRIANGLES अलग-अलग त्रिभुजों की एक श्रृंखला बनाएं",
+        "TRIANGLE_FAN पंखे की तरह फ़ैशन में पहले शीर्ष को साझा करते हुए जुड़े हुए त्रिभुजों की एक श्रृंखला बनाएँ",
+        "TRIANGLE_STRIP स्ट्रिप फैशन में जुड़े त्रिकोणों की एक श्रृंखला बनाएं",
+        "QUADS अलग-अलग क्वाड्स की एक श्रृंखला बनाएं",
+        "QUAD_STRIP अगला क्वाड बनाने के लिए आसन्न किनारों का उपयोग करके क्वाड स्ट्रिप बनाएं",
+        "TESS (केवल WEBGL) स्पष्ट टेसलेशन द्वारा वक्र भरने के लिए अनियमित बहुभुज को संभालें",
+        "<a href=\"#/p5/beginShape\">beginShape()</a> फ़ंक्शन को कॉल करने के बाद, <a href=\"#/p5/vertex\">vertex()</a> की एक श्रृंखला आदेशों का पालन करना चाहिए। आकृति बनाना बंद करने के लिए, <a href=\"#/p5/endShape\">endShape()</a> कॉल करें। प्रत्येक आकृति को वर्तमान स्ट्रोक रंग के साथ रेखांकित किया जाएगा और भरण रंग से भरा जाएगा।",
+        "रूपांतरण जैसे <a href=\"#/p5/translate\">translate()</a>, <a href=\"#/p5/rotate\">rotate()</a> और <a href =\"#/p5/scale\">scale()</a> <a href=\"#/p5/beginShape\">beginShape()</a> के भीतर काम नहीं करते हैं। अन्य आकृतियों का उपयोग करना भी संभव नहीं है, जैसे <a href=\"#/p5/ellipse\">ellipse()</a> या <a href=\"#/p5/rect\">rect( )</a> <a href=\"#/p5/beginShape\">beginShape()</a> के भीतर।"
       ],
       "params": {
-        "kind": "Constant: (Optional) either POINTS, LINES, TRIANGLES, TRIANGLE_FAN  TRIANGLE_STRIP, QUADS, QUAD_STRIP or TESS"
+        "kind": "कांस्टेंट: (वैकल्पिक) या तो POINTS, LINES, TRIANGLES, TRIANGLE_FAN TRIANGLE_STRIP, QUADS, QUAD_STRIP या TESS"
       }
     },
     "bezierVertex": {
       "description": [
         "बेज़ियर कर्व्स के लिए वर्टेक्स निर्देशांक निर्दिष्ट करता है। bezierVertex() के लिए प्रत्येक कॉल दो नियंत्रण बिंदुओं की स्थिति और एक बेज़ियर वक्र के एक एंकर पॉइंट को परिभाषित करता है, एक लाइन या आकार में एक नया सेगमेंट जोड़ता है। वेबजीएल मोड के लिए bezierVertex() में इस्तेमाल किया जा सकता है 2डी और साथ ही 3डी मोड। 2डी मोड 6 पैरामीटर की अपेक्षा करता है, जबकि 3डी मोड 9 पैरामीटर (जेड निर्देशांक सहित) की अपेक्षा करता है।",
-        "पहली बार bezierVertex() का उपयोग <a href=\"#/p5/beginShape\">beginShape()</a> कॉल के भीतर किया जाता है, इसे <a href=\"#/ पहला एंकर बिंदु सेट करने के लिए p5/vertex\">vertex()</a>। इस फ़ंक्शन का उपयोग <a href=\"#/p5/beginShape\">beginShape()</a> और <a के बीच किया जाना चाहिए href=\"#/p5/endShape\">endShape()</a> और केवल तभी जब <a href=\"#/p5/beginShape\">beginShape()</ में निर्दिष्ट कोई MODE या POINTS पैरामीटर न हो। ए>।"
+        "पहली बार bezierVertex() का उपयोग <a href=\"#/p5/beginShape\">beginShape()</a> कॉल के भीतर किया जाता है, इसे <a href=\"#/p5/vertex\">vertex()</a> पर कॉल के साथ शुरू किया जाना चाहिए पहला एंकर पॉइंट सेट करने के लिए। इस फ़ंक्शन का उपयोग <a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\">endShape()</a> के बीच किया जाना चाहिए और केवल तभी जब <a href=\"#/p5/beginShape\">beginShape()</a> के लिए कोई MODE या POINTS पैरामीटर निर्दिष्ट न हो।"
       ],
       "params": {
-        "x2": "Number: x-coordinate for the first control point",
-        "y2": "Number: y-coordinate for the first control point",
-        "x3": "Number: x-coordinate for the second control point",
-        "y3": "Number: y-coordinate for the second control point",
-        "x4": "Number: x-coordinate for the anchor point",
-        "y4": "Number: y-coordinate for the anchor point",
-        "z2": "Number: z-coordinate for the first control point (for WebGL mode)",
-        "z3": "Number: z-coordinate for the second control point (for WebGL mode)",
-        "z4": "Number: z-coordinate for the anchor point (for WebGL mode)"
+        "x2": "संख्या: पहले नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y2": "संख्या: पहले नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x3": "संख्या: दूसरे नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "y3": "संख्या: दूसरे नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x4": "संख्या: एंकर बिंदु के लिए x-निर्देशांक",
+        "y4": "संख्या: लंगर बिंदु के लिए y-निर्देशांक",
+        "z2": "संख्या: पहले नियंत्रण बिंदु के लिए z-निर्देशांक (वेबजीएल मोड के लिए)",
+        "z3": "संख्या: दूसरे नियंत्रण बिंदु के लिए z-निर्देशांक (वेबजीएल मोड के लिए)",
+        "z4": "संख्या: एंकर पॉइंट (WebGL मोड के लिए) के लिए जेड-निर्देशांक"
       }
     },
     "curveVertex": {
       "description": [
         "वक्र के लिए शीर्ष निर्देशांक निर्दिष्ट करता है। इस फ़ंक्शन का उपयोग केवल <a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\"> endShape()</a>के बीच किया जा सकता है और केवल तभी जब <a href=\"#/p5/beginShape\">beginShape()</a> के लिए निर्दिष्ट कोई मोड पैरामीटर न हो। WebGL मोड के लिए curveVertex() का उपयोग 2D में किया जा सकता है साथ ही 3D मोड। 2D मोड 2 पैरामीटर की अपेक्षा करता है, जबकि 3D मोड 3 पैरामीटर की अपेक्षा करता है।",
-        "वक्र की शुरुआत और अंत को निर्देशित करने के लिए curveVertex() लाइनों की एक श्रृंखला में पहले और अंतिम बिंदुओं का उपयोग किया जाएगा। दूसरे और तीसरे बिंदुओं के बीच एक छोटा वक्र खींचने के लिए न्यूनतम चार बिंदुओं की आवश्यकता होती है। पांचवां जोड़ना curveVertex() के साथ बिंदु दूसरे, तीसरे और चौथे बिंदुओं के बीच वक्र खींचेगा। curveVertex() फ़ंक्शन कैटमुल-रोम स्प्लिन का कार्यान्वयन है।"
+        "वक्र की शुरुआत और अंत को निर्देशित करने के लिए curveVertex() लाइनों की एक श्रृंखला में पहले और अंतिम बिंदुओं का उपयोग किया जाएगा। दूसरे और तीसरे बिंदुओं के बीच एक छोटा वक्र खींचने के लिए न्यूनतम चार बिंदुओं की आवश्यकता होती है। पांचवां जोड़ना curveVertex() के साथ बिंदु दूसरे, तीसरे और चौथे बिंदुओं के बीच वक्र खींचेगा। curveVertex() फ़ंक्शन Catmull-Rom स्प्लिन का कार्यान्वयन है।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the vertex",
-        "y": "Number: y-coordinate of the vertex",
-        "z": "Number: (Optional) z-coordinate of the vertex (for WebGL mode)"
+        "x": "संख्या: शीर्ष का x-निर्देशांक",
+        "y": "संख्या: शीर्ष का y-निर्देशांक",
+        "z": "संख्या: (वैकल्पिक) शीर्ष का z-निर्देशांक (WebGL मोड के लिए)"
       }
     },
     "endContour": {
@@ -825,7 +829,7 @@
         "<a href=\"#/p5/endShape\">endShape()</a> फ़ंक्शन <a href=\"#/p5/beginShape\">beginShape()</a> का सहयोगी है और <a href=\"#/p5/beginShape\">beginShape()</a> के बाद ही कॉल किया जा सकता है। जब <a href=\"#/p5/endshape\">endShape()</a> है कहा जाता है, पिछली कॉल के बाद से परिभाषित सभी छवि डेटा <a href=\"#/p5/beginShape\">beginShape()</a> को छवि बफर में लिखा जाता है। मोड पैरामीटर के मान के रूप में स्थिर बंद करें आकृति को बंद करने के लिए (शुरुआत और अंत को जोड़ने के लिए)।"
       ],
       "params": {
-        "mode": "Constant: (Optional) use CLOSE to close the shape"
+        "mode": "कांस्टेंट: (वैकल्पिक) आकृति को बंद करने के लिए CLOSE का उपयोग करें"
       }
     },
     "quadraticVertex": {
@@ -834,12 +838,12 @@
         "इस फ़ंक्शन का उपयोग <a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\">endShape()</a> के बीच किया जाना चाहिए और केवल तभी जब <a href=\"#/p5/beginShape\">beginShape()</a> में निर्दिष्ट कोई मोड या POINTS पैरामीटर न हो।"
       ],
       "params": {
-        "cx": "Number: x-coordinate for the control point",
-        "cy": "Number: y-coordinate for the control point",
-        "x3": "Number: x-coordinate for the anchor point",
-        "y3": "Number: y-coordinate for the anchor point",
-        "cz": "Number: z-coordinate for the control point (for WebGL mode)",
-        "z3": "Number: z-coordinate for the anchor point (for WebGL mode)"
+        "cx": "संख्या: नियंत्रण बिंदु के लिए x-निर्देशांक",
+        "cy": "संख्या: नियंत्रण बिंदु के लिए y-निर्देशांक",
+        "x3": "संख्या: एंकर बिंदु के लिए x-निर्देशांक",
+        "y3": "संख्या: लंगर बिंदु के लिए y-निर्देशांक",
+        "cz": "संख्या: नियंत्रण बिंदु के लिए z-निर्देशांक (WebGL मोड के लिए)",
+        "z3": "संख्या: एंकर पॉइंट (WebGL मोड के लिए) के लिए z-निर्देशांक"
       }
     },
     "vertex": {
@@ -847,22 +851,167 @@
         "सभी आकृतियों का निर्माण शीर्षों की एक श्रृंखला को जोड़कर किया जाता है। <a href=\"#/p5/vertex\">vertex()</a> का उपयोग बिंदुओं, रेखाओं, त्रिभुजों, चतुर्भुज और के लिए शीर्ष निर्देशांक निर्दिष्ट करने के लिए किया जाता है। बहुभुज। इसका उपयोग विशेष रूप से <a href=\"#/p5/beginShape\">beginShape()</a> और <a href=\"#/p5/endShape\">endShape()</a> में किया जाता है कार्य।"
       ],
       "params": {
-        "x": "Number: x-coordinate of the vertex",
-        "y": "Number: y-coordinate of the vertex",
-        "z": "Number: z-coordinate of the vertex.  Defaults to 0 if not specified.",
-        "u": "Number: the vertex's texture u-coordinate",
-        "v": "Number: the vertex's texture v-coordinate"
+        "x": "संख्या: शीर्ष का x-निर्देशांक",
+        "y": "संख्या: शीर्ष का y-निर्देशांक",
+        "z": "संख्या: शीर्ष का z-निर्देशांक। निर्दिष्ट नहीं होने पर 0 पर डिफ़ॉल्ट।",
+        "u": "संख्या: वर्टेक्स की बनावट u-समन्वय",
+        "v": "संख्या: वर्टेक्स की बनावट v-निर्देशांक"
       }
     },
     "normal": {
       "description": [
-        "Sets the 3d vertex normal to use for subsequent vertices drawn with <a href=\"#/p5/vertex\">vertex()</a>. A normal is a vector that is generally nearly perpendicular to a shape's surface which controls how much light will be reflected from that part of the surface."
+        "<a href=\"#/p5/vertex\">vertex()</a> के साथ बनाए गए बाद के शीर्षों के लिए उपयोग करने के लिए 3d शीर्ष को सामान्य सेट करता है। एक सामान्य एक वेक्टर है जो आम तौर पर आकार की सतह के लगभग लंबवत होता है जो नियंत्रित करता है कि सतह के उस हिस्से से कितना प्रकाश परिलक्षित होगा।"
       ],
       "params": {
-        "vector": "Vector: A p5.Vector representing the vertex normal.",
-        "x": "Number: The x component of the vertex normal.",
-        "y": "Number: The y component of the vertex normal.",
-        "z": "Number: The z component of the vertex normal."
+        "vector": "वेक्टर: एक p5.Vector शीर्ष सामान्य का प्रतिनिधित्व करता है।",
+        "x": "संख्या: शीर्ष सामान्य का x घटक।",
+        "y": "संख्या: शीर्ष सामान्य का y घटक।",
+        "z": "संख्या: शीर्ष सामान्य का z घटक।"
+      }
+    },
+    "plane": {
+      "description": [
+        "दी गई चौड़ाई और ऊंचाई के साथ एक विमान बनाएं"
+      ],
+      "params": {
+        "width": "संख्या: (वैकल्पिक) विमान की चौड़ाई",
+        "height": "संख्या: (वैकल्पिक) विमान की ऊंचाई",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-आयाम में त्रिकोण उपखंडों की वैकल्पिक संख्या",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-आयाम में त्रिभुज उपविभाजनों की वैकल्पिक संख्या"
+      }
+    },
+    "box": {
+      "description": [
+        "दिए गए चौड़ाई, ऊंचाई और गहराई के साथ एक बॉक्स बनाएं"
+      ],
+      "params": {
+        "width": "संख्या: (वैकल्पिक) बॉक्स की चौड़ाई",
+        "height": "संख्या: (वैकल्पिक) बॉक्स की ऊंचाई",
+        "depth": "संख्या: (वैकल्पिक) बॉक्स की गहराई",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-आयाम में त्रिकोण उपखंडों की वैकल्पिक संख्या",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-आयाम में त्रिभुज उपविभाजनों की वैकल्पिक संख्या"
+      }
+    },
+    "sphere": {
+      "description": [
+        "दिए गए त्रिज्या के साथ एक गोला बनाएं।",
+        "DetailX और DetailY किसी गोले के x-आयाम और y-आयाम में उप-विभाजनों की संख्या निर्धारित करता है। अधिक उप-विभाजन गोले को चिकना बनाते हैं। अनुशंसित अधिकतम मान दोनों 24 हैं। 24 से अधिक मान का उपयोग करने से चेतावनी हो सकती है या ब्राउज़र धीमा करो।"
+      ],
+      "params": {
+        "radix": "संख्या: (वैकल्पिक) वृत्त की त्रिज्या",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-आयाम में उपखंडों की वैकल्पिक संख्या",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-आयाम में उपविभाजनों की वैकल्पिक संख्या"
+      }
+    },
+    "cylinder": {
+      "description": [
+        "दिए गए त्रिज्या और ऊंचाई के साथ एक सिलेंडर बनाएं",
+        "DetailX और DetailY एक सिलेंडर के x-आयाम और y-आयाम में उपविभाजनों की संख्या निर्धारित करता है। अधिक उपविभाजन सिलेंडर को चिकना बनाते हैं। विवरणX के लिए अनुशंसित अधिकतम मान 24 है। 24 से अधिक मान का उपयोग करने से चेतावनी हो सकती है या ब्राउज़र धीमा करो।"
+      ],
+      "params": {
+        "radix": "संख्या: (वैकल्पिक) सतह की त्रिज्या",
+        "height": "संख्या: (वैकल्पिक) सिलेंडर की ऊंचाई",
+        "detailX": "पूर्णांक: (वैकल्पिक) x-आयाम में उपखंडों की संख्या; डिफ़ॉल्ट 24 है",
+        "detailY": "पूर्णांक: (वैकल्पिक) y-आयाम में उपखंडों की संख्या; डिफ़ॉल्ट 1 है",
+        "bottomCap": "बूलियन: (वैकल्पिक) क्या सिलेंडर के निचले हिस्से को बनाना है",
+        "topCap": "बूलियन: (वैकल्पिक) क्या सिलेंडर का शीर्ष बनाना है"
+      }
+    },
+    "cone": {
+      "description": [
+        "दिए गए त्रिज्या और ऊंचाई के साथ एक शंकु बनाएं",
+        "DetailX और DetailY शंकु के x-आयाम और y-आयाम में उपविभागों की संख्या निर्धारित करते हैं। अधिक उपविभाजन शंकु को चिकना बनाते हैं। विवरणX के लिए अनुशंसित अधिकतम मान 24 है। 24 से अधिक मान का उपयोग करने से चेतावनी हो सकती है या ब्राउज़र को धीमा कर दें।"
+      ],
+      "params": {
+        "radius": "संख्या: (वैकल्पिक) निचली सतह की त्रिज्या",
+        "height": "संख्या: (वैकल्पिक) शंकु की ऊँचाई",
+        "detailX": "पूर्णांक: (वैकल्पिक) खण्डों की संख्या, जितने अधिक खण्ड होंगे उतनी ही सरल ज्यामिति डिफ़ॉल्ट 24 है",
+        "detailY": "पूर्णांक: (वैकल्पिक) खण्डों की संख्या, जितने अधिक खण्ड होंगे उतनी ही सरल ज्यामिति डिफ़ॉल्ट 1 है",
+        "cap": "बूलियन: (वैकल्पिक) क्या शंकु का आधार बनाना है"
+      }
+    },
+    "ellipsoid": {
+      "description": [
+        "दी गई त्रिज्या के साथ एक दीर्घवृत्त बनाएँ",
+        "DetailX और DetailY शंकु के x-आयाम और y-आयाम में उप-विभाजनों की संख्या निर्धारित करते हैं। अधिक उप-विभाजन दीर्घवृत्त को चिकना बनाते हैं। 150 से ऊपर की विवरण संख्या से बचें, यह ब्राउज़र को क्रैश कर सकता है।"
+      ],
+      "params": {
+        "radiusx": "संख्या: (वैकल्पिक) दीर्घवृत्ताभ की x-त्रिज्या",
+        "radiusy": "संख्या: (वैकल्पिक) दीर्घवृत्ताभ की y-त्रिज्या",
+        "radiusz": "संख्या: (वैकल्पिक) दीर्घवृत्ताभ की z-त्रिज्या",
+        "detailX": "पूर्णांक: (वैकल्पिक) खंडों की संख्या, जितने अधिक खंड, उतनी ही चिकनी ज्यामिति डिफ़ॉल्ट 24 है। 150 से ऊपर विवरण संख्या से बचें, यह ब्राउज़र को क्रैश कर सकता है।",
+        "detailY": "पूर्णांक: (वैकल्पिक) खण्डों की संख्या, जितने अधिक खण्ड होंगे उतनी ही सहज ज्यामिति डिफ़ॉल्ट 16 है। 150 से ऊपर की विवरण संख्या से बचें, यह ब्राउज़र को क्रैश कर सकता है।"
+      }
+    },
+    "torus": {
+      "description": [
+        "दिए गए त्रिज्या और ट्यूब त्रिज्या के साथ एक टोरस बनाएं",
+        "डिटेलएक्स और डिटेलवाई, टोरस के एक्स-डायमेंशन और वाई-डायमेंशन में सबडिवीजन की संख्या निर्धारित करते हैं। अधिक सबडिवीजन टोरस को स्मूद बनाते हैं। डिटेलएक्स और डिटेलवाई के लिए डिफ़ॉल्ट और अधिकतम मान क्रमशः 24 और 16 हैं। उन्हें 4 और 6 जैसे अपेक्षाकृत छोटे मानों पर सेट करने से आप टोरस के अलावा अन्य आकार बना सकते हैं।"
+        ],
+        "params": {
+          "radius": "संख्या: (वैकल्पिक) संपूर्ण रिंग की त्रिज्या",
+          "tubeRadius": "संख्या: (वैकल्पिक) ट्यूब की त्रिज्या",
+          "detailX": "पूर्णांक: (वैकल्पिक) x-आयाम में खंडों की संख्या, जितने अधिक खंड होंगे उतनी ही चिकनी ज्यामिति डिफ़ॉल्ट 24 है",
+          "detailY": "पूर्णांक: (वैकल्पिक) y-आयाम में खंडों की संख्या, जितने अधिक खंड होंगे उतनी ही सरल ज्यामिति डिफ़ॉल्ट 16 है"
+        }
+    },
+    "p5.Geometry": {
+      "description": [
+        "p5 ज्यामिति वर्ग"
+      ],
+      "params": {
+        "detailX": "पूर्णांक: (वैकल्पिक) क्षैतिज सतह पर शीर्षों की संख्या",
+        "detailY": "पूर्णांक: (वैकल्पिक) क्षैतिज सतह पर शीर्षों की संख्या",
+        "callback": "फ़ंक्शन: (वैकल्पिक) ऑब्जेक्ट इंस्टेंटेशन पर कॉल करने के लिए फ़ंक्शन।"
+      },
+      "computeFaces": {
+        "description": [
+          "शीर्षों के आधार पर ज्यामिति वस्तुओं के चेहरों की गणना करता है।"
+        ]
+      },
+      "computeNormals": {
+        "description": [
+          "प्रत्येक चेहरे के औसत के रूप में चिकनी नॉर्म्स प्रति वर्टेक्स की गणना करता है।"
+        ]
+      },
+      "averageNormals": {
+        "description": [
+          "वर्टेक्स नॉर्म्स का औसत। घुमावदार सतहों में उपयोग किया जाता है"
+        ]
+      },
+      "averagePoleNormals": {
+        "description": [
+          "औसत ध्रुव मानदंड। गोलाकार आदिम में प्रयुक्त"
+        ]
+      },
+      "normalize": {
+        "description": [
+          "सभी शीर्षों को -100 से 100 के दायरे में केंद्रित करने के लिए संशोधित करता है।"
+        ]
+      }
+    },
+    "loadModel": {
+      "description": [
+        "किसी OBJ या STL फ़ाइल से 3D मॉडल लोड करें।",
+        "<a href=\"#/p5/loadModel\">loadModel()</a> को <a href=\"#/p5/preload\">preload()</a> के अंदर रखा जाना चाहिए। यह आपके शेष कोड के चलने से पहले मॉडल को पूरी तरह से लोड होने देता है।",
+        "ओबीजे और एसटीएल प्रारूप की सीमाओं में से एक यह है कि इसमें अंतर्निहित पैमाने की भावना नहीं है। इसका मतलब है कि विभिन्न कार्यक्रमों से निर्यात किए गए मॉडल बहुत भिन्न आकार के हो सकते हैं। यदि आपका मॉडल प्रदर्शित नहीं हो रहा है, तो कॉल करने का प्रयास करें <a href=\"#/p5/loadModel\">loadModel()</a> सामान्यीकृत पैरामीटर के साथ सत्य पर सेट है। यह मॉडल को p5 के लिए उपयुक्त पैमाने पर आकार देगा। आप फाइनल में अतिरिक्त परिवर्तन भी कर सकते हैं <a href=\"#/p5/scale\">scale()</a> फ़ंक्शन के साथ आपके मॉडल का आकार।",
+        "साथ ही, रंगीन एसटीएल फाइलों के लिए समर्थन मौजूद नहीं है। रंग के साथ एसटीएल फाइलें रंग गुणों के बिना प्रस्तुत की जाएंगी।"
+      ],
+      "returns": "p5.Geometry3D ऑब्जेक्ट",
+      "params": {
+        "path": "स्ट्रिंग: लोड किए जाने वाले मॉडल का पथ",
+         "normalize": "बूलियन: यदि सही है, लोड करते समय मॉडल को मानकीकृत आकार में मापें",
+         "successCallback": "फ़ंक्शन(p5.ज्यामिति): (वैकल्पिक) मॉडल लोड होने के बाद बुलाया जाने वाला फ़ंक्शन। 3D मॉडल ऑब्जेक्ट पास किया जाएगा।",
+         "failureCallback": "फ़ंक्शन (ईवेंट): (वैकल्पिक) यदि मॉडल लोड करने में विफल रहता है तो ईवेंट त्रुटि के साथ कॉल किया जाता है।",
+         "fileType": "स्ट्रिंग: (वैकल्पिक) मॉडल का फ़ाइल एक्सटेंशन (<code>.stl</code>, <code>.obj</code>)।"
+      }
+    },
+    "model": {
+      "description": [
+        "स्क्रीन पर एक 3d मॉडल प्रस्तुत करें।"
+      ],
+      "params": {
+        "model": "p5.Geometry: रेंडर किए जाने के लिए लोडेड 3d मॉडल"
       }
     },
     "VERSION": {
@@ -3122,92 +3271,7 @@
       ],
       "returns": "Integer: the current year"
     },
-    "plane": {
-      "description": [
-        "Draw a plane with given a width and height"
-      ],
-      "params": {
-        "width": "Number: (Optional) width of the plane",
-        "height": "Number: (Optional) height of the plane",
-        "detailX": "Integer: (Optional) Optional number of triangle  subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) Optional number of triangle  subdivisions in y-dimension"
-      }
-    },
-    "box": {
-      "description": [
-        "Draw a box with given width, height and depth"
-      ],
-      "params": {
-        "width": "Number: (Optional) width of the box",
-        "Height": "Number: (Optional) height of the box",
-        "depth": "Number: (Optional) depth of the box",
-        "detailX": "Integer: (Optional) Optional number of triangle  subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) Optional number of triangle  subdivisions in y-dimension"
-      }
-    },
-    "sphere": {
-      "description": [
-        "Draw a sphere with given radius.",
-        "DetailX and detailY determines the number of subdivisions in the x-dimension and the y-dimension of a sphere. More subdivisions make the sphere seem smoother. The recommended maximum values are both 24. Using a value greater than 24 may cause a warning or slow down the browser."
-      ],
-      "params": {
-        "radius": "Number: (Optional) radius of circle",
-        "detailX": "Integer: (Optional) optional number of subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) optional number of subdivisions in y-dimension"
-      }
-    },
-    "cylinder": {
-      "description": [
-        "Draw a cylinder with given radius and height",
-        "DetailX and detailY determines the number of subdivisions in the x-dimension and the y-dimension of a cylinder. More subdivisions make the cylinder seem smoother. The recommended maximum value for detailX is 24. Using a value greater than 24 may cause a warning or slow down the browser."
-      ],
-      "params": {
-        "radius": "Number: (Optional) radius of the surface",
-        "height": "Number: (Optional) height of the cylinder",
-        "detailX": "Integer: (Optional) number of subdivisions in x-dimension;  default is 24",
-        "detailY": "Integer: (Optional) number of subdivisions in y-dimension;  default is 1",
-        "bottomCap": "Boolean: (Optional) whether to draw the bottom of the cylinder",
-        "topCap": "Boolean: (Optional) whether to draw the top of the cylinder"
-      }
-    },
-    "cone": {
-      "description": [
-        "Draw a cone with given radius and height",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a cone. More subdivisions make the cone seem smoother. The recommended maximum value for detailX is 24. Using a value greater than 24 may cause a warning or slow down the browser."
-      ],
-      "params": {
-        "radius": "Number: (Optional) radius of the bottom surface",
-        "height": "Number: (Optional) height of the cone",
-        "detailX": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 24",
-        "detailY": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 1",
-        "cap": "Boolean: (Optional) whether to draw the base of the cone"
-      }
-    },
-    "ellipsoid": {
-      "description": [
-        "Draw an ellipsoid with given radius",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a cone. More subdivisions make the ellipsoid appear to be smoother. Avoid detail number above 150, it may crash the browser."
-      ],
-      "params": {
-        "radiusx": "Number: (Optional) x-radius of ellipsoid",
-        "radiusy": "Number: (Optional) y-radius of ellipsoid",
-        "radiusz": "Number: (Optional) z-radius of ellipsoid",
-        "detailX": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 24. Avoid detail number above  150, it may crash the browser.",
-        "detailY": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 16. Avoid detail number above  150, it may crash the browser."
-      }
-    },
-    "torus": {
-      "description": [
-        "Draw a torus with given radius and tube radius",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a torus. More subdivisions make the torus appear to be smoother. The default and maximum values for detailX and detailY are 24 and 16, respectively. Setting them to relatively small values like 4 and 6 allows you to create new shapes other than a torus."
-      ],
-      "params": {
-        "radius": "Number: (Optional) radius of the whole ring",
-        "tubeRadius": "Number: (Optional) radius of the tube",
-        "detailX": "Integer: (Optional) number of segments in x-dimension,  the more segments the smoother geometry  default is 24",
-        "detailY": "Integer: (Optional) number of segments in y-dimension,  the more segments the smoother geometry  default is 16"
-      }
-    },
+    
     "orbitControl": {
       "description": [
         "Allows movement around a 3D sketch using a mouse or trackpad. Left-clicking and dragging will rotate the camera position about the center of the sketch, right-clicking and dragging will pan the camera position without rotation, and using the mouse wheel (scrolling) will move the camera closer or further from the center of the sketch. This function can be called with parameters dictating sensitivity to mouse movement along the X and Y axes. Calling this function without parameters is equivalent to calling orbitControl(1,1). To reverse direction of movement in either axis, enter a negative number for sensitivity."
@@ -3350,30 +3414,6 @@
       "description": [
         "This function will remove all the lights from the sketch for the subsequent materials rendered. It affects all the subsequent methods. Calls to lighting methods made after noLights() will re-enable lights in the sketch."
       ]
-    },
-    "loadModel": {
-      "description": [
-        "किसी OBJ या STL फ़ाइल से 3D मॉडल लोड करें।",
-        "<a href=\"#/p5/loadModel\">loadModel()</a> को <a href=\"#/p5/preload\">preload()</a> के अंदर रखा जाना चाहिए। यह आपके शेष कोड के चलने से पहले मॉडल को पूरी तरह से लोड होने देता है।",
-        "ओबीजे और एसटीएल प्रारूप की सीमाओं में से एक यह है कि इसमें अंतर्निहित पैमाने की भावना नहीं है। इसका मतलब है कि विभिन्न कार्यक्रमों से निर्यात किए गए मॉडल बहुत भिन्न आकार के हो सकते हैं। यदि आपका मॉडल प्रदर्शित नहीं हो रहा है, तो कॉल करने का प्रयास करें <a href=\"#/p5/loadModel\">loadModel()</a> सामान्यीकृत पैरामीटर के साथ सत्य पर सेट है। यह मॉडल को p5 के लिए उपयुक्त पैमाने पर आकार देगा। आप फाइनल में अतिरिक्त परिवर्तन भी कर सकते हैं <a href=\"#/p5/scale\">scale()</a> फ़ंक्शन के साथ आपके मॉडल का आकार।",
-        "साथ ही, रंगीन एसटीएल फाइलों के लिए समर्थन मौजूद नहीं है। रंग के साथ एसटीएल फाइलें रंग गुणों के बिना प्रस्तुत की जाएंगी।"
-      ],
-      "returns": "p5.Geometry3D ऑब्जेक्ट",
-      "params": {
-        "path": "String: Path of the model to be loaded",
-        "normalize": "Boolean: If true, scale the model to a  standardized size when loading",
-        "successCallback": "function(p5.Geometry): (Optional) Function to be called  once the model is loaded. Will be passed  the 3D model object.",
-        "failureCallback": "Function(Event): (Optional) called with event error if  the model fails to load.",
-        "fileType": "String: (Optional) The file extension of the model  (<code>.stl</code>, <code>.obj</code>)."
-      }
-    },
-    "model": {
-      "description": [
-        "Render a 3d model to the screen."
-      ],
-      "params": {
-        "model": "p5.Geometry: Loaded 3d model to be rendered"
-      }
     },
     "loadShader": {
       "description": [
@@ -5523,41 +5563,6 @@
         "y": "Number: y position of a point in world space",
         "z": "Number: z position of a point in world space"
       }
-    }
-  },
-  "p5.Geometry": {
-    "description": [
-      "p5 Geometry class"
-    ],
-    "params": {
-      "detailX": "Integer: (Optional) number of vertices on horizontal surface",
-      "detailY": "Integer: (Optional) number of vertices on horizontal surface",
-      "callback": "Function: (Optional) function to call upon object instantiation."
-    },
-    "computeFaces": {
-      "description": [
-        "computes faces for geometry objects based on the vertices."
-      ]
-    },
-    "computeNormals": {
-      "description": [
-        "computes smooth normals per vertex as an average of each face."
-      ]
-    },
-    "averageNormals": {
-      "description": [
-        "Averages the vertex normals. Used in curved surfaces"
-      ]
-    },
-    "averagePoleNormals": {
-      "description": [
-        "Averages pole normals. Used in spherical primitives"
-      ]
-    },
-    "normalize": {
-      "description": [
-        "Modifies all vertices to be centered within the range -100 to 100."
-      ]
     }
   },
   "p5.Shader": {
